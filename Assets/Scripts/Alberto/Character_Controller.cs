@@ -570,25 +570,25 @@ public class Character_Controller : MonoBehaviour
                 canJump = false;
             }
 
-            //Calculate the space pressing force in time
-            if (playerState == PLAYER_STATUS.JUMP)
-            {
-                spaceTime += Time.deltaTime; //See how much time you press Space
+            ////Calculate the space pressing force in time
+            //if (playerState == PLAYER_STATUS.JUMP)
+            //{
+            //    spaceTime += Time.deltaTime; //See how much time you press Space
 
-                float smoothingTimer =  spaceTime / maxJumpTime; //This variable will produce the effect, were when you are at the half of the jump, will reduce the force added to the jump, making it smoother
-                float finalJumpForce = 0; //This will be the force added to the jump
+            //    float smoothingTimer =  spaceTime / maxJumpTime; //This variable will produce the effect, were when you are at the half of the jump, will reduce the force added to the jump, making it smoother
+            //    float finalJumpForce = 0; //This will be the force added to the jump
 
-                if (smoothingTimer > 0.5f) //In case the jumps is more than the half of it, make it smoother
-                {
-                    finalJumpForce = jumpForceMultiplier * (1 - smoothingTimer); //We make the jump smoother, seeing the point of the jump that we are with smoothingTimer, reducing it by 1, and then we multiply it with "jumpForceMultiplier" to reducit
-                }
-                else
-                {
-                    finalJumpForce = jumpForceMultiplier; //In case we are not more than the half of the jump, we put the base force of jumping
-                }
+            //    if (smoothingTimer > 0.5f) //In case the jumps is more than the half of it, make it smoother
+            //    {
+            //        finalJumpForce = jumpForceMultiplier * (1 - smoothingTimer); //We make the jump smoother, seeing the point of the jump that we are with smoothingTimer, reducing it by 1, and then we multiply it with "jumpForceMultiplier" to reducit
+            //    }
+            //    else
+            //    {
+            //        finalJumpForce = jumpForceMultiplier; //In case we are not more than the half of the jump, we put the base force of jumping
+            //    }
 
-                rb.velocity += new Vector2(0, gravityVector.y * finalJumpForce * Time.deltaTime); //Here finally add the force to the rigidbody, taking count the gravity force and the time.
-            }
+            //    rb.velocity += new Vector2(0, gravityVector.y * finalJumpForce * Time.deltaTime); //Here finally add the force to the rigidbody, taking count the gravity force and the time.
+            //}
         }
 
         //Reset Jump if the player key up Space, or if arrive to maxJumpForce
