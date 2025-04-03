@@ -26,11 +26,11 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         float targetX = transform.position.x, targetY = transform.position.y;
-        if (target.position.y + cameraHeigth < cameraBounds.bounds.w && target.position.y - cameraHeigth > cameraBounds.bounds.x) 
+        if (target.position.y + cameraHeigth < cameraBounds.bounds.height && target.position.y - cameraHeigth > cameraBounds.bounds.y) 
         {
             targetY = target.position.y;
         }
-        if (target.position.x + cameraWidth < cameraBounds.bounds.z && target.position.x - cameraWidth > cameraBounds.bounds.y)
+        if (target.position.x + cameraWidth < cameraBounds.bounds.width && target.position.x - cameraWidth > cameraBounds.bounds.x)
         {
             targetX = target.position.x;
         }

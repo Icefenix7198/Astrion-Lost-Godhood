@@ -430,7 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothTime: 0.1
   target: {fileID: 491870594}
-  bounds: {x: 0, y: 0, z: 0, w: 0}
+  cameraBounds: {fileID: 0}
   cameraHeigth: 0
   cameraWidth: 0
 --- !u!114 &1239600506
@@ -819,19 +819,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6047602940807946176, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
       propertyPath: bounds.w
-      value: 6
+      value: 5.97
       objectReference: {fileID: 0}
     - target: {fileID: 6047602940807946176, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
       propertyPath: bounds.x
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047602940807946176, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
-      propertyPath: bounds.y
       value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 6047602940807946176, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
+      propertyPath: bounds.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047602940807946176, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
       propertyPath: bounds.z
+      value: 41.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047602940807946176, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
+      propertyPath: bounds.width
       value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047602940807946176, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
+      propertyPath: bounds.height
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6351500026288975683, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
       propertyPath: m_Name
