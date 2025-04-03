@@ -26,17 +26,45 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         float targetX = transform.position.x, targetY = transform.position.y;
+
+        //Y camera position
         if (target.position.y + cameraHeigth < cameraBounds.bounds.height && target.position.y - cameraHeigth > cameraBounds.bounds.y) 
         {
             targetY = target.position.y;
         }
+        else if(target.position.y + cameraHeigth > cameraBounds.bounds.height) //If the camera is too high, move it to make its heigth the bound heigth
+        {
+            targetY = cameraBounds.bounds.height - 2*cameraHeigth;
+        }
+        else if(target.position.y - cameraHeigth > cameraBounds.bounds.y) //If the camera is too low, move it to make its y the bound y
+        {
+            targetY = cameraBounds.bounds.y + 2*cameraHeigth;
+        }
+
         if (target.position.x + cameraWidth < cameraBounds.bounds.width && target.position.x - cameraWidth > cameraBounds.bounds.x)
         {
             targetX = target.position.x;
         }
-        Vector3 pPosition = new Vector3(targetX, targetY, target.position.z);
+        else if (target.position.x + cameraWidth > cameraBounds.bounds.width) //If the camera is too high, move it to make its heigth the bound heigth
+        {
+            targetX = cameraBounds.bounds.width - cameraWidth;
+        }
+        else if (target.position.x - cameraWidth > cameraBounds.bounds.x) //If the camera is too low, move it to make its y the bound y
+        {
+            targetX = cameraBounds.bounds.x + cameraWidth;
+        }
 
-        Vector3 targetPosition = pPosition + offset;
+        // Set camera position
+        Vector3 targetPosition = new Vector3(targetX, targetY, target.position.z) + offset;
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+
+        if(cameraHeigth != this.GetComponent<Camera>().orthographicSize) 
+        {
+            cameraHeigth = this.GetComponent<Camera>().orthographicSize;
+        }
+        if(cameraWidth != cameraHeigth * Screen.width / Screen.height) 
+        {
+            cameraWidth = cameraHeigth * Screen.width / Screen.height;
+        }
     }
 }
