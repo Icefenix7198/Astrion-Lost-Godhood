@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
     public float smoothTime = 0.25f;
 
     [SerializeField] private Transform target;
-    [SerializeField] private Vector4 bounds; //Up = W,down = X, left = Y rigth = Z
+    [SerializeField] private CameraBounds cameraBounds; //Up = W,down = X, left = Y rigth = Z
 
     //Camera size
     [SerializeField] float cameraHeigth;
@@ -18,7 +18,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bounds = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<CameraBounds>().bounds;
+        cameraBounds = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<CameraBounds>();
         cameraHeigth = this.GetComponent<Camera>().orthographicSize;
         cameraWidth = cameraHeigth * Screen.width / Screen.height;
     }   
@@ -26,11 +26,11 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         float targetX = transform.position.x, targetY = transform.position.y;
-        if (target.position.y + cameraHeigth < bounds.w && target.position.y - cameraHeigth > bounds.x) 
+        if (target.position.y + cameraHeigth < cameraBounds.bounds.w && target.position.y - cameraHeigth > cameraBounds.bounds.x) 
         {
             targetY = target.position.y;
         }
-        if (target.position.x + cameraWidth < bounds.z && target.position.x - cameraWidth > bounds.y)
+        if (target.position.x + cameraWidth < cameraBounds.bounds.z && target.position.x - cameraWidth > cameraBounds.bounds.y)
         {
             targetX = target.position.x;
         }
