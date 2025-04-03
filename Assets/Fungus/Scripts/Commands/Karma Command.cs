@@ -1,12 +1,12 @@
 
 using UnityEngine;
 
+
 namespace Fungus
 {
     /// <summary>
     /// Modify Player's karma.
     /// </summary>
-   
 
     [CommandInfo("Narrative",
                  "Karma",
@@ -14,22 +14,23 @@ namespace Fungus
 
     public class Karma : Command
     {
-        [Tooltip("Reference to the GameObject that has the karmaManager")]
-        [SerializeField] protected GameObject karmaManager;
-
         [Tooltip("Name of the method to call")]
-        [SerializeField] protected int karma = 0;
+        [SerializeField] protected int karmaModification = 0;
 
       
         #region Public members
 
         public override void OnEnter()
         {
-            //if (karmaManager != null)
-            //{
-            //    karmaManager;
-            //    return;
-            //}
+            if (KarmaManager.Instance != null)
+            {
+                KarmaManager.Instance.ModifyKarma(karmaModification);
+                Continue(); // Move to the next Fungus command
+            }
+            else
+            {
+                Debug.LogError("KarmaManager instance not found");
+            }
         }
     
         #endregion
