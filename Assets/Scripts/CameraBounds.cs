@@ -7,6 +7,7 @@ public class CameraBounds : MonoBehaviour
     public Vector4 bounds;
     // Start is called before the first frame update
 
+    [ExecuteAlways]
     private void Awake()
     {
         //Get the positio of all bounds into the vector
