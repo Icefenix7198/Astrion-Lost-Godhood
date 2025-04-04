@@ -91,8 +91,8 @@ namespace Fungus.EditorUtils
 
                     if (guids.Length == 0)
                     {
-                        instance = ScriptableObject.CreateInstance(typeof(FungusEditorResources)) as FungusEditorResources;
-                        AssetDatabase.CreateAsset(instance, GetRootFolder() + "/FungusEditorResources.asset");
+                        //instance = ScriptableObject.CreateInstance(typeof(FungusEditorResources)) as FungusEditorResources;
+                        //AssetDatabase.CreateAsset(instance, GetRootFolder() + "/FungusEditorResources.asset");
                     }
                     else 
                     {
