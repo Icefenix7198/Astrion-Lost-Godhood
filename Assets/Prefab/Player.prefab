@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7287550924217668168}
   - component: {fileID: 5340519164110044463}
+  - component: {fileID: 1583027361673579583}
   m_Layer: 6
   m_Name: DownAttack
   m_TagString: Untagged
@@ -77,6 +78,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3, y: 0.1}
   m_EdgeRadius: 0
+--- !u!114 &1583027361673579583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18660547026310005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b9245c680d4b2469ca946e60cd4875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &329191799398425447
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,6 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5326962356308450322}
   - component: {fileID: 4507531795016416903}
+  - component: {fileID: 3366309948165034056}
   m_Layer: 6
   m_Name: LeftAttack
   m_TagString: Untagged
@@ -231,6 +245,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3366309948165034056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2402543387206213257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b9245c680d4b2469ca946e60cd4875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3817253746880007348
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7587222909991534561}
   - component: {fileID: 2755605815550393805}
+  - component: {fileID: 3926745259550144566}
   m_Layer: 6
   m_Name: RightAttack
   m_TagString: Untagged
@@ -496,6 +523,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3926745259550144566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545974832219931642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b9245c680d4b2469ca946e60cd4875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6931323709287795065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1231,9 @@ MonoBehaviour:
   softDamage: 10
   midDamage: 15
   hardDamage: 20
+  leftDetector: {fileID: 0}
+  rightDetector: {fileID: 0}
+  impactHitDetector: {fileID: 0}
   enemyMask:
     serializedVersion: 2
     m_Bits: 0
