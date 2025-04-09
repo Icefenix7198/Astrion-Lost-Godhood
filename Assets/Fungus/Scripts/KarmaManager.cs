@@ -8,8 +8,7 @@ public class KarmaManager : MonoBehaviour
 {
     public static KarmaManager Instance { get; private set; }
 
-    [SerializeField] private int pm_Karma;
-    [SerializeField] private Flowchart flowchart;
+    [SerializeField] private int m_Karma;
 
     private void Awake()
     {
@@ -22,38 +21,23 @@ public class KarmaManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        UpdateFlowchart(); // For debugging, will be deleted from here.
     }
 
     public int GetKarma()
     {
-        return pm_Karma;
+        return m_Karma;
     }
 
-    public void ModifyKarma(int amount)
+    public void ModifyKarma(int amount, Flowchart flowchart)
     {
-        pm_Karma += amount;
+        m_Karma += amount;
 
-        UpdateFlowchart();
+        flowchart.SetIntegerVariable("playerKarma", m_Karma);
 
-        Debug.Log("Current Karma: " +  pm_Karma);   
+        Debug.Log("Current Karma: " +  m_Karma);   
     }
-
-    private void UpdateFlowchart()
-    {
-        if (flowchart != null)
-        {
-            flowchart.SetIntegerVariable("playerKarma", pm_Karma);
-        }
-        else
-        {
-            Debug.LogWarning("Missing flowchart");
-        }
-    }
-
     public void ResetKarma()
     {
-        pm_Karma = 0;
+        m_Karma = 0;
     }
 }

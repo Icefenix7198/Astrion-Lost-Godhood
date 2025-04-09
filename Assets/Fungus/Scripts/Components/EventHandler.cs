@@ -79,6 +79,9 @@ namespace Fungus
                 ParentBlock.SuppressNextAutoSelection = true;
             }
 
+            // Update Karma value of the flowchart to the one in the Karma manager, only when starting the flowchart.
+            KarmaManager.Instance.ModifyKarma(0, flowchart);
+
             return flowchart.ExecuteBlock(ParentBlock);
         }
 

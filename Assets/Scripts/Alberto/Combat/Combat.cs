@@ -180,9 +180,4 @@ public class Combat : MonoBehaviour
         Debug.Log("Enemy Hitted with: " + damage);
         enemyHealth.RecieveDamage(damage);
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-    }
 }

@@ -37,24 +37,24 @@ namespace Fungus
         {
             switch (keyPressType)
             {
-            case KeyPressType.KeyDown:
-                if (Input.GetKeyDown(keyCode))
-                {
-                    ExecuteBlock();
-                }
-                break;
-            case KeyPressType.KeyUp:
-                if (Input.GetKeyUp(keyCode))
-                {
-                    ExecuteBlock();
-                }
-                break;
-            case KeyPressType.KeyRepeat:
-                if (Input.GetKey(keyCode))
-                {
-                    ExecuteBlock();
-                }
-                break;
+                case KeyPressType.KeyDown:
+                    if (Input.GetKeyDown(keyCode))
+                    {
+                        ExecuteBlock();
+                    }
+                    break;
+                case KeyPressType.KeyUp:
+                    if (Input.GetKeyUp(keyCode))
+                    {
+                        ExecuteBlock();
+                    }
+                    break;
+                case KeyPressType.KeyRepeat:
+                    if (Input.GetKey(keyCode))
+                    {
+                        ExecuteBlock();
+                    }
+                    break;
             }
         }
 

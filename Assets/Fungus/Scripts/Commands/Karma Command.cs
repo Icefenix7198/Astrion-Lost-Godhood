@@ -24,7 +24,8 @@ namespace Fungus
         {
             if (KarmaManager.Instance != null)
             {
-                KarmaManager.Instance.ModifyKarma(karmaModification);
+                KarmaManager.Instance.ModifyKarma(karmaModification, GetFlowchart());
+
                 Continue(); // Move to the next Fungus command
             }
             else
