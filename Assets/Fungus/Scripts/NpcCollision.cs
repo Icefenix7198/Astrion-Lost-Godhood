@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC_Collision : MonoBehaviour
+public class NpcCollision : MonoBehaviour
 {
     [SerializeField] Flowchart m_Flowchart; // It has to change to another flowchart when finishing
 
