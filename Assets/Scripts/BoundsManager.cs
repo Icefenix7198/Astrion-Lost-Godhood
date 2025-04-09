@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class CameraBounds : MonoBehaviour
+public class BoundsManager : MonoBehaviour
 {
     public Rect bounds;
     // Start is called before the first frame update
