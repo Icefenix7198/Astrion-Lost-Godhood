@@ -1231,12 +1231,12 @@ MonoBehaviour:
   softDamage: 10
   midDamage: 15
   hardDamage: 20
-  leftDetector: {fileID: 0}
-  rightDetector: {fileID: 0}
-  impactHitDetector: {fileID: 0}
+  leftDetector: {fileID: 3366309948165034056}
+  rightDetector: {fileID: 3926745259550144566}
+  impactHitDetector: {fileID: 1583027361673579583}
   enemyMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
 --- !u!114 &2806839698021921365
 MonoBehaviour:
   m_ObjectHideFlags: 0
