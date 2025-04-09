@@ -15,6 +15,11 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] float cameraHeigth;
     [SerializeField] float cameraWidth;
 
+    //Temporal testing things
+    [SerializeField] GameObject downBall;
+    [SerializeField] GameObject upBall;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,18 +32,24 @@ public class CameraFollow : MonoBehaviour
     {
         float targetX = transform.position.x, targetY = transform.position.y;
 
+        downBall.transform.position = new Vector3(0, gameObject.transform.position.y + cameraHeigth, 0);
+        upBall.transform.position = new Vector3(0, gameObject.transform.position.y - cameraHeigth, 0);
+
         //Y camera position
-        if (target.position.y + cameraHeigth < cameraBounds.bounds.height && target.position.y - cameraHeigth > cameraBounds.bounds.y) 
+        if (gameObject.transform.position.y + cameraHeigth < cameraBounds.bounds.height && gameObject.transform.position.y - cameraHeigth > cameraBounds.bounds.y) 
         {
             targetY = target.position.y;
+            Debug.Log("Inside bounds, target is:" + targetY);
         }
-        else if(target.position.y + cameraHeigth > cameraBounds.bounds.height) //If the camera is too high, move it to make its heigth the bound heigth
+        else if (gameObject.transform.position.y + cameraHeigth > cameraBounds.bounds.height) //If the camera is too high, move it to make its heigth the bound heigth
         {
-            targetY = cameraBounds.bounds.height - 2*cameraHeigth;
+            targetY = cameraBounds.bounds.height - 2 * cameraHeigth;
+            Debug.Log("Outside bounds");
         }
-        else if(target.position.y - cameraHeigth > cameraBounds.bounds.y) //If the camera is too low, move it to make its y the bound y
+        else if (gameObject.transform.position.y - cameraHeigth > cameraBounds.bounds.y) //If the camera is too low, move it to make its y the bound y
         {
-            targetY = cameraBounds.bounds.y + 2*cameraHeigth;
+            targetY = cameraBounds.bounds.y + 2 * cameraHeigth;
+            Debug.Log("Outside bounds");
         }
 
         if (target.position.x + cameraWidth < cameraBounds.bounds.width && target.position.x - cameraWidth > cameraBounds.bounds.x)
