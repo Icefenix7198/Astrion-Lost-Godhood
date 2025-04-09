@@ -36,6 +36,12 @@ public class Combat : MonoBehaviour
     //Animator
     Animator animator;
 
+    [Header("________________________ ATTACK DETECTORS ________________________")]
+    //Animator
+    public AttackDetectors leftDetector;
+    public AttackDetectors rightDetector;
+    public AttackDetectors impactHitDetector;
+
     [Header("Asigned Layers")]
     [Space(5)]
 
@@ -84,7 +90,9 @@ public class Combat : MonoBehaviour
 
     void BasicAttack(int attackType)
     {
-        if(attackType == 1)
+        EnemyHealth enemyHealth = new EnemyHealth();
+
+        if (attackType == 1)
         {
             animator.SetTrigger("Attactk_Sides"); //Say the animator to do the side attack
         }
@@ -96,7 +104,9 @@ public class Combat : MonoBehaviour
 
             if (leftAttack)
             {
-                HitEnemy((AttackType)attackType);
+                enemyHealth = leftDetector.SendEnemyCollision();
+
+                HitEnemy((AttackType)attackType, enemyHealth);
             }
         }
         else
@@ -106,7 +116,9 @@ public class Combat : MonoBehaviour
 
             if (rightAttack)
             {
-                HitEnemy((AttackType)attackType);
+                enemyHealth = rightDetector.SendEnemyCollision();
+
+                HitEnemy((AttackType)attackType, enemyHealth);
             }
         }
     }
@@ -133,16 +145,20 @@ public class Combat : MonoBehaviour
 
     public void ImpactHit()
     {
+        EnemyHealth enemyHealth = new EnemyHealth();
+
         //Check if is there is something at LeftAttack
         downAttack = Physics2D.OverlapAreaAll(DownHit.bounds.min, DownHit.bounds.max, enemyMask).Length > 0;
 
         if(downAttack)
         {
-            HitEnemy(AttackType.MID_ATTACK);
+            enemyHealth = impactHitDetector.SendEnemyCollision();
+
+            HitEnemy(AttackType.MID_ATTACK, enemyHealth);
         }
     }
 
-    void HitEnemy(AttackType attackType)
+    void HitEnemy(AttackType attackType, EnemyHealth enemyHealth)
     {
         float damage = 0;
 
@@ -162,5 +178,11 @@ public class Combat : MonoBehaviour
         }
 
         Debug.Log("Enemy Hitted with: " + damage);
+        enemyHealth.RecieveDamage(damage);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
     }
 }
