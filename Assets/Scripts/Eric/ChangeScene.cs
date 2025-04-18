@@ -14,7 +14,6 @@ public class ChangeScene : MonoBehaviour
     public Vector2 positionToSpawn;
     [SerializeField] GameObject Player;
 
-    [SerializeField] List<GameObject> notDestoyOnLoad;
     // Start is called before the first frame update
     void Start()
     {
