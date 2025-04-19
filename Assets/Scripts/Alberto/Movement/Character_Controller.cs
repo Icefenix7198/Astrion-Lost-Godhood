@@ -463,7 +463,15 @@ public class Character_Controller : MonoBehaviour
         UnlockHabilities(habilityUnlocker);
 
         //Aniamte the player
-        AnimatePlayer();
+        //AnimatePlayer();
+        if (flipAnimation) //Flip the animation if it is necesary
+        {
+            playerSprite.flipX = true;
+        }
+        else
+        {
+            playerSprite.flipX = false;
+        }
 
         if (crouchDown && playerState == PLAYER_STATUS.WALL) //Player can deatach walls if press Left Control
         {
