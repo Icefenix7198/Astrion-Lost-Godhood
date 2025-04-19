@@ -16,8 +16,7 @@ public class EnemyBasicPathfinding : MonoBehaviour
         followPlayer = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         if (followPlayer)
         {
@@ -28,6 +27,12 @@ public class EnemyBasicPathfinding : MonoBehaviour
             positionTarget = Vector3.MoveTowards(this.transform.position, target.position, followSpeed);
             this.transform.position = new Vector3(positionTarget.x, this.transform.position.y, 0);
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
