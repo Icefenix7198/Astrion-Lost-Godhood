@@ -52,7 +52,7 @@ public class ChangeScene : MonoBehaviour
         }
     }
 
-    void SceneTransition()
+    public void SceneTransition()
     {
         // Don't Destroy The Player to have only one player on the game, not one per scene
         DontDestroyOnLoad(Player);
@@ -63,7 +63,11 @@ public class ChangeScene : MonoBehaviour
 
     IEnumerator LoadLevel() 
     {
-        transition.SetTrigger("Start");
+        if(transition != null) 
+        {
+            transition.SetTrigger("Start");
+        }
+        
 
         yield return new WaitForSeconds(transitionTime);
 
