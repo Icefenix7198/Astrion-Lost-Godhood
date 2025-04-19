@@ -288,7 +288,7 @@ MonoBehaviour:
   transitionTime: 0.6
   SceneName: SunderedMountain
   requiresInteraction: 0
-  positionToSpawn: {x: 0, y: 150}
+  positionToSpawn: {x: 0, y: 340}
   Player: {fileID: 2045992381}
 --- !u!4 &169762492
 Transform:
