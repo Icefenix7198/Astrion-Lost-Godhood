@@ -22,6 +22,8 @@ public class NpcCollision : MonoBehaviour
             // Implement logic to show the button to press in order to start the dialogue
 
             // Implement logic to disable the player
+            CharacterController cc = collision.GetComponent<CharacterController>();
+            cc.enabled = false;
         }
     }
 
@@ -32,6 +34,7 @@ public class NpcCollision : MonoBehaviour
             if (m_Flowchart != null)
             {
                 m_Flowchart.gameObject.SetActive(false);
+                CharacterController cc = collision.GetComponent<CharacterController>();
             }
         }
     }
