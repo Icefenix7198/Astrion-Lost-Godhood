@@ -10,7 +10,6 @@ public class CameraFollow : MonoBehaviour
     public float smoothTime = 0.25f;
 
     [SerializeField] private Transform target;
-    float targetX = 0, targetY = 0;
 
     //Bounds
     [SerializeField] private BoundsManager camWorldBounds; //Up = W,down = X, left = Y rigth = Z
