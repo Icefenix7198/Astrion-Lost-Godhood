@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class NpcCollision : MonoBehaviour
 {
-    [SerializeField] Flowchart m_Flowchart; // It has to change to another flowchart when finishing
+    [SerializeField] private Flowchart m_Flowchart; // It has to change to another flowchart when finishing
 
-    // TODO Andreu: Faltaría hacer que cuando se ha hablado con un NPC, se cambie el flowchart con el típico de una frase, tengo que pensar como hacerlo.
-    [SerializeField] Flowchart m_FlowchartAfterDialogue; 
+    [SerializeField] private Character_Controller m_CharacterControllerScript;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,10 +19,7 @@ public class NpcCollision : MonoBehaviour
             }
 
             // Implement logic to show the button to press in order to start the dialogue
-
-            // Implement logic to disable the player
-            CharacterController cc = collision.GetComponent<CharacterController>();
-            cc.enabled = false;
+            m_CharacterControllerScript = collision.GetComponent<Character_Controller>();
         }
     }
 
@@ -34,8 +30,15 @@ public class NpcCollision : MonoBehaviour
             if (m_Flowchart != null)
             {
                 m_Flowchart.gameObject.SetActive(false);
-                CharacterController cc = collision.GetComponent<CharacterController>();
             }
+        }
+    }
+
+    public void EnablePlayer(bool active)
+    {
+        if (m_CharacterControllerScript != null)
+        {
+            m_CharacterControllerScript.enabled = active;
         }
     }
 }
