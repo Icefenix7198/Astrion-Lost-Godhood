@@ -2023,7 +2023,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3065895132189854937, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_Size.x
+      value: 5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065895132189854937, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_Size.y
+      value: 5.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065895132189854937, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ba552fc62e95d0549978b33e1771c069, type: 3}
+    - target: {fileID: 5128077914675520205, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: Player_Full
+      value: 
+      objectReference: {fileID: 21300000, guid: ba552fc62e95d0549978b33e1771c069, type: 3}
     - target: {fileID: 5392348142607108482, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409146145092306769, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
