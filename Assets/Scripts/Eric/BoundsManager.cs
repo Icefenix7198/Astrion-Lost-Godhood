@@ -26,4 +26,9 @@ public class BoundsManager : MonoBehaviour
         transform.GetChild(2).position = new Vector3(bounds.x, transform.position.y, transform.position.z); //Left
         transform.GetChild(3).position = new Vector3(bounds.width, transform.position.y, transform.position.z); //Rigth
     }
+
+    public void ChangeBounds(float h,float y, float x, float w) 
+    {
+        Debug.Log("AAAA");
+    }
 }
