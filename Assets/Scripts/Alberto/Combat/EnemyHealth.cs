@@ -1,22 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+namespace EnemyHealthNamespace
 {
-    [Header("Life Variables")]
-    public float life;
-
-    private void Update()
+    public class EnemyHealth : MonoBehaviour
     {
-        if(life <= 0)
+        [Header("Life Variables")]
+        public float life;
+
+        public bool unlocksDoor;
+        public GameObject door;
+
+        private void Update()
         {
-            Destroy(this.gameObject);
+            if (life <= 0)
+            {
+                Destroy(this.gameObject);
+
+                if (unlocksDoor)
+                {
+                    Destroy(door);
+                }
+            }
+        }
+
+        public void RecieveDamage(float damage)
+        {
+            life -= damage;
         }
     }
 
-    public void RecieveDamage(float damage)
-    {
-        life -= damage;
-    }
+    //[CustomEditor(typeof(EnemyHealth))]
+    //public class EnemyHealth_Editor : Editor
+    //{
+    //    public override void OnInspectorGUI()
+    //    {
+    //        var script = (EnemyHealth)target;
+
+    //        script.life = EditorGUILayout.FloatField(label: "Life", script.life);
+    //        script.unlocksDoor = EditorGUILayout.Toggle(label:"Unlocks Door", script.unlocksDoor);
+
+    //        if (script.unlocksDoor == false)
+    //            return;
+
+    //        script.door = EditorGUILayout.ObjectField(label:"Door Gameobject", script.door, typeof(GameObject),true) as GameObject;
+    //    }
+    //}
 }
