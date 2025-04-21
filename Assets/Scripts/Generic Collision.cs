@@ -7,9 +7,9 @@ using UnityEngine.EventSystems;
 
 public class GenericCollisonEventCall : MonoBehaviour
 {
-    [SerializeField] UnityEvent OnEnter;
+    public UnityEvent OnEnter;
 
-    [SerializeField] UnityEvent OnExit;
+    public UnityEvent OnExit;
 
     [SerializeField] GameObject checker;
 
@@ -17,9 +17,9 @@ public class GenericCollisonEventCall : MonoBehaviour
     {
         if (checker != null) 
         {
-            if(collision.gameObject == checker) 
+            if(collision.gameObject.name == checker.name) 
             {
-                OnEnter.Invoke();
+                OnEnter?.Invoke();
             }
         }
     }
@@ -28,9 +28,9 @@ public class GenericCollisonEventCall : MonoBehaviour
     {
         if (checker != null)
         {
-            if (collision.gameObject == checker)
+            if (collision.gameObject.name == checker.name)
             {
-                OnExit.Invoke();
+                OnExit?.Invoke();
             }
         }
     }

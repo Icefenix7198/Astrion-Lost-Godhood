@@ -72,7 +72,7 @@ public class CameraFollow : MonoBehaviour
         yTarget = Mathf.Min(camWorldBounds.bounds.height - cameraHeigth, yTarget);
         yTarget = Mathf.Max(camWorldBounds.bounds.y + cameraHeigth, (yTarget));
 
-        Debug.Log(xTarget - cameraWidth);
+        //Debug.Log(xTarget - cameraWidth);
 
         //Set position
         Vector3 targetPosition = new Vector3
