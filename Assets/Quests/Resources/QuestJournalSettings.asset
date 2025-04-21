@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea5b0758be8f45889c71a8b6e5ceda5d, type: 3}
+  m_Name: QuestJournalSettings
+  m_EditorClassIdentifier: 
+  _database: {fileID: 11400000, guid: e85d9db7970c2c248bfdcffa74e26cc9, type: 2}
+  _startingQuests:
+  - {fileID: 11400000, guid: 63e0a136f7e80204dae326e3c028f7a4, type: 2}
+  - {fileID: 11400000, guid: 8680c338bb1090244bd07d741424243c, type: 2}
+  - {fileID: 11400000, guid: c4d49d8a67dc1bf4081fa56e7ba8eb05, type: 2}
+  _hideDefaultQuestDefinition: 0
+  _hideDefaultTaskDefinition: 0
+  _debugQuests:
+  - definition: {fileID: 11400000, guid: 8680c338bb1090244bd07d741424243c, type: 2}
+    _markComplete: 1
+  - definition: {fileID: 11400000, guid: 63e0a136f7e80204dae326e3c028f7a4, type: 2}
+    _markComplete: 1
+  _debugTasks:
+  - {fileID: -1412844774608707153, guid: c4d49d8a67dc1bf4081fa56e7ba8eb05, type: 2}

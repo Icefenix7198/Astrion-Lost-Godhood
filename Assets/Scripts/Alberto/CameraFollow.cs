@@ -59,7 +59,7 @@ public class CameraFollow : MonoBehaviour
         }
 
         lastPlayerPositionX = target.transform.position.x;
-        Debug.Log(cameraPosition);
+        //Debug.Log(cameraPosition);
         xTarget += cameraDistance * cameraPosition * cameraWidth * 2;
         
         float yTarget = target.transform.position.y;
