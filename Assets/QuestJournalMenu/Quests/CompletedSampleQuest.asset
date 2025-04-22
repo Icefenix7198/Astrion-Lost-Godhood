@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 4ca8b47a-1b65-44a7-9bab-9dbf5966b523
   _parent: {fileID: 11400000}
-  _description: Shiver me timbers! The map's a riddle, leading us to booty untold.
-    With a hearty crew and a sturdy ship, we brave the untamed and the bold.
+  _description: Lorem ipsum dolor sit amet consectetur adipiscing elit, nunc massa
+    donec magnis porttitor in, dignissim dis himenaeos volutpat egestas hendrerit.bold.
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,8 +30,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _displayName: Completed Sample Quest
   _id: f9ea7413-b891-42f9-ac9b-062cea9806f7
-  _description: Avast ye! Under the black flag we sail, the horizon our domain. The
-    creak of timbers, the slap of waves, freedom courses through our veins.
+  _description: Lorem ipsum dolor sit amet consectetur adipiscing elit, nunc massa
+    donec magnis porttitor in, dignissim dis himenaeos volutpat egestas hendrerit.
   _tasks:
   - {fileID: -3614585789152805425}
   - {fileID: 5984850899454313740}
@@ -49,5 +49,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 094e3d23-8716-4f49-af6e-8a2e0d5d69c6
   _parent: {fileID: 11400000}
-  _description: Yo-ho-ho, and a bottle of rum! By the moon's silver glow, we share
-    tales of yore. Our laughter and songs mingle with the ocean's roar.
+  _description: Lorem ipsum dolor sit amet consectetur adipiscing elit, nunc massa
+    donec magnis porttitor in, dignissim dis himenaeos volutpat egestas hendrerit.

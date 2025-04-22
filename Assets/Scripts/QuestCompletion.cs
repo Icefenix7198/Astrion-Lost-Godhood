@@ -10,12 +10,12 @@ using UnityEngine;
 public class QuestCompletion : MonoBehaviour
 {
     public QuestDefinition questToComplete;
-    private IQuestInstance _questInstance;
-    [SerializeField] private PrintQuestList _activeQuestList;
-    [SerializeField] private PrintQuestList _completedQuestList;
+    private IQuestInstance m_questInstance;
+    [SerializeField] private PrintQuestList m_activeQuestList;
+    [SerializeField] private PrintQuestList m_completedQuestList;
 
-    [SerializeField] private string questName;
-    [SerializeField] private Flowchart _flowchart;
+    [SerializeField] private string m_questName;
+    [SerializeField] private Flowchart m_flowchart;
 
 
     private void Start()
@@ -33,25 +33,27 @@ public class QuestCompletion : MonoBehaviour
 
     public void CompleteQuest()
     {
-        _questInstance = QuestJournalManager.Instance.Quests.Get(questToComplete);
+        m_questInstance = QuestJournalManager.Instance.Quests.Get(questToComplete);
 
-        Debug.Log($"Quest: {_questInstance.Definition.DisplayName}, Status: {_questInstance.Status}");
+        Debug.Log($"Quest: {m_questInstance.Definition.DisplayName}, Status: {m_questInstance.Status}");
 
-        _questInstance.Complete();
+        m_questInstance.Complete();
 
         // Update flowchart
-        _flowchart.SetBooleanVariable(questName, true);
+        m_flowchart.SetBooleanVariable(m_questName, true);
 
         // Debug values
-        List<string> a = _flowchart.GetVariableNames().ToList();
-        Debug.Log($"Variable: {a.Find(name => name.Contains(questName))}, Value: {_flowchart.GetVariable(questName).GetValue()}");
+        List<string> a = m_flowchart.GetVariableNames().ToList();
+        Debug.Log($"Variable: {a.Find(name => name.Contains(m_questName))}, Value: {m_flowchart.GetVariable(m_questName).GetValue()}");
 
-        Debug.Log($"Quest: {_questInstance.Definition.DisplayName}, Status: {_questInstance.Status}");
+        Debug.Log($"Quest: {m_questInstance.Definition.DisplayName}, Status: {m_questInstance.Status}");
+
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 
     public void UpdateUIOnComplete(IQuestInstance completedQuest)
     {
-        _activeQuestList.UpdateUI();
-        _completedQuestList.UpdateUI();
+        m_activeQuestList.UpdateUI();
+        m_completedQuestList.UpdateUI();
     }
 }
