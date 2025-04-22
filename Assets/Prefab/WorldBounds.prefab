@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 6047602940807946176}
   m_Layer: 0
   m_Name: WorldBounds
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,7 +141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be3e38639ceaea41ac7933299dd34ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounds: {x: 0, y: 0, z: 0, w: 0}
+  bounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
 --- !u!1 &9093629248163425301
 GameObject:
   m_ObjectHideFlags: 0

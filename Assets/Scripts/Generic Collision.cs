@@ -19,6 +19,7 @@ public class GenericCollisonEventCall : MonoBehaviour
         {
             if(collision.gameObject.name == checker.name) 
             {
+                Debug.Log("Generic Trigger Activated On Enter of" + this.gameObject.name);
                 OnEnter?.Invoke();
             }
         }
@@ -28,6 +29,7 @@ public class GenericCollisonEventCall : MonoBehaviour
     {
         if (checker != null)
         {
+            Debug.Log("Generic Trigger Activated On Exit of" + this.gameObject.name);
             if (collision.gameObject.name == checker.name)
             {
                 OnExit?.Invoke();

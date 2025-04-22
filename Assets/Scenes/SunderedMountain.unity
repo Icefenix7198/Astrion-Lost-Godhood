@@ -21814,7 +21814,7 @@ GameObject:
   - component: {fileID: 940473661}
   - component: {fileID: 940473660}
   m_Layer: 0
-  m_Name: Entry 1
+  m_Name: PlayerActivate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30706,7 +30706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3317301402952214154, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.5
+      value: -34
       objectReference: {fileID: 0}
     - target: {fileID: 4185799314415778034, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30718,7 +30718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6047602940807946176, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
       propertyPath: bounds.y
-      value: -24
+      value: -27
       objectReference: {fileID: 0}
     - target: {fileID: 6047602940807946176, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
       propertyPath: bounds.width
@@ -30734,7 +30734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067948267982444583, guid: 864ef066bfabd954dbb67e5f6d8691b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22
+      value: -26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45911,7 +45911,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 200/-24/-27/64
+          m_StringArgument: 200/-27/-27/64
           m_BoolArgument: 0
         m_CallState: 2
   checker: {fileID: 8344784690478132799, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}

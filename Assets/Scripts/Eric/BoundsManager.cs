@@ -44,25 +44,29 @@ public class BoundsManager : MonoBehaviour
 
     public void ChangeBounds(Rect rect) 
     {
+        bounds = rect;
+
         transform.GetChild(0).position = new Vector3(transform.position.x, rect.height, transform.position.z); //Up
         transform.GetChild(1).position = new Vector3(transform.position.x, rect.y, transform.position.z); //Down
         transform.GetChild(2).position = new Vector3(rect.x, transform.position.y, transform.position.z); //Left
         transform.GetChild(3).position = new Vector3(rect.width, transform.position.y, transform.position.z); //Rigth
     }
 
-    public void ChangeStringBounds(String str) //String cause I dont know how the fuck 
+    public void ChangeStringBoundsHYXW(String str) //String cause I dont know how the fuck 
     {
         string[] words = str.Split("/");
         float[] rect = new float[4];
 
         //Parse numbers
-        rect[0] = float.Parse(words[0]);
-        rect[1] = float.Parse(words[1]);
-        rect[2] = float.Parse(words[2]);
-        rect[3] = float.Parse(words[3]);
+        rect[0] = float.Parse(words[0]); // H
+        rect[1] = float.Parse(words[1]); // Y
+        rect[2] = float.Parse(words[2]); // X
+        rect[3] = float.Parse(words[3]); // W
+
+        Debug.Log(rect[0] + " " + rect[1] + " " + rect[2] + " " + rect[3]);
 
         //Create rectangle
-        Rect rectangle = new Rect(rect[0], rect[1], rect[2], rect[3]);
+        Rect rectangle = new Rect(rect[2], rect[1], rect[3], rect[0]);
         ChangeBounds(rectangle);
     }
 }
