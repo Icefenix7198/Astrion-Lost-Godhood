@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform target;
 
     //Bounds
-    [SerializeField] private BoundsManager camWorldBounds; //Up = W,down = X, left = Y rigth = Z
+    public BoundsManager camWorldBounds; //Up = W,down = X, left = Y rigth = Z
     [SerializeField] float cameraDistance;
     float lastPlayerPositionX;
     float lastPlayerPositionY;
@@ -25,7 +25,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        camWorldBounds = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<BoundsManager>();
+        //camWorldBounds = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<BoundsManager>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         cameraHeigth = this.GetComponent<Camera>().orthographicSize;
         cameraWidth = cameraHeigth * Screen.width / Screen.height;
@@ -36,14 +36,14 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target == null) 
+        if (true /*target == null*/) 
         {
             target = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
         if (camWorldBounds == null)
         {
-            camWorldBounds = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<BoundsManager>();
+            camWorldBounds = GameObject.FindGameObjectWithTag("CameraBounds").GetComponent<BoundsManager>();
         }
         cameraHeigth = this.GetComponent<Camera>().orthographicSize;
         cameraWidth = cameraHeigth * Screen.width / Screen.height;
