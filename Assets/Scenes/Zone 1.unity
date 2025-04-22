@@ -802,7 +802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 401143341}
   m_Layer: 0
-  m_Name: Dialogue Test
+  m_Name: Dialogue Lorelai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4996,7 +4996,7 @@ GameObject:
   - component: {fileID: 964783733}
   - component: {fileID: 964783734}
   m_Layer: 6
-  m_Name: NPC
+  m_Name: NPC Lorelai
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
