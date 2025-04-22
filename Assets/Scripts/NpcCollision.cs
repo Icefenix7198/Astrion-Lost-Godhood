@@ -8,6 +8,7 @@ public class NpcCollision : MonoBehaviour
     [SerializeField] private Flowchart m_Flowchart; // It has to change to another flowchart when finishing
 
     [SerializeField] private Character_Controller m_CharacterControllerScript;
+    [SerializeField] private Combat m_CombatScript;
 
     [SerializeField] private GameObject m_iconGO;
 
@@ -22,6 +23,7 @@ public class NpcCollision : MonoBehaviour
 
             // Implement logic to show the button to press in order to start the dialogue
             m_CharacterControllerScript = collision.GetComponent<Character_Controller>();
+            m_CombatScript = collision.GetComponent<Combat>();
 
             m_iconGO.SetActive(true);
         }
@@ -42,9 +44,10 @@ public class NpcCollision : MonoBehaviour
 
     public void EnablePlayer(bool active)
     {
-        if (m_CharacterControllerScript != null)
+        if (m_CharacterControllerScript != null && m_CombatScript != null)
         {
             m_CharacterControllerScript.enabled = active;
+            m_CombatScript.enabled = active;
             m_iconGO.SetActive(active);
         }
     }
