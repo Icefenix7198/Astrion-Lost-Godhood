@@ -47,7 +47,7 @@ namespace CleverCrow.Fluid.QuestJournals.Examples
             _onQuestClick.Invoke(quest);
         }
 
-        private void OnQuestAdded(IQuestInstance addedQuest)
+        public void UpdateUI()
         {
             // Clear previous buttons if you're reloading the whole list
             foreach (Transform child in transform)
@@ -72,6 +72,11 @@ namespace CleverCrow.Fluid.QuestJournals.Examples
             {
                 _printQuest.SetQuest(allQuests[0]);
             }
+        }
+
+        private void OnQuestAdded(IQuestInstance addedQuest)
+        {
+            UpdateUI();
         }
     }
 }
