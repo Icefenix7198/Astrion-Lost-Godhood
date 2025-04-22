@@ -29,7 +29,7 @@ public class GenericCollisonEventCall : MonoBehaviour
     {
         if (checker != null)
         {
-            Debug.Log("Generic Trigger Activated On Exit of" + this.gameObject.name);
+            Debug.Log("Generic Trigger Activated On Exit of" + this.gameObject.name + this.transform.parent.name);
             if (collision.gameObject.name == checker.name)
             {
                 OnExit?.Invoke();

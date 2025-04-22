@@ -40,6 +40,8 @@ public class CameraFollow : MonoBehaviour
         {
             target = GameObject.FindGameObjectWithTag("Player").transform;
         }
+        cameraHeigth = this.GetComponent<Camera>().orthographicSize;
+        cameraWidth = cameraHeigth * Screen.width / Screen.height;
     }
 
     private void LateUpdate()
