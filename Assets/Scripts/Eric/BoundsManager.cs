@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class BoundsManager : MonoBehaviour
 {
-    public static event Action<Rect> changeBounds;
+    //public static event Action<Rect> changeBounds;
 
     public Rect bounds;
     // Start is called before the first frame update
@@ -22,16 +22,16 @@ public class BoundsManager : MonoBehaviour
         bounds.width = transform.GetChild(3).position.x; //Rigth
     }
 
-    void OnEnable()
-    {
-        changeBounds += ChangeBounds;
-    }
+    //void OnEnable()
+    //{
+    //    changeBounds += ChangeBounds;
+    //}
 
 
-    void OnDisable()
-    {
-        changeBounds -= ChangeBounds;
-    }
+    //void OnDisable()
+    //{
+    //    changeBounds -= ChangeBounds;
+    //}
 
     [ExecuteAlways]
     private void OnValidate()
