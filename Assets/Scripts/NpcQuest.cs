@@ -1,7 +1,5 @@
 using CleverCrow.Fluid.QuestJournals;
 using CleverCrow.Fluid.QuestJournals.Quests;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NpcQuest : MonoBehaviour
