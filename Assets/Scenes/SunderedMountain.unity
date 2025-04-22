@@ -3379,6 +3379,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5579226929146883145, guid: f7ed309e752b90d41a0c546c94a3218f, type: 3}
   m_PrefabInstance: {fileID: 139506215}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &141424957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 141424958}
+  - component: {fileID: 141424960}
+  - component: {fileID: 141424959}
+  m_Layer: 5
+  m_Name: Karma UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &141424958
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141424957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 946821814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 117, y: -37.100006}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &141424959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141424957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Karma: 0'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &141424960
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141424957}
+  m_CullTransparentMesh: 1
 --- !u!1001 &143611825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12711,6 +12845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Karma: 0
+  m_text: {fileID: 141424959}
 --- !u!1001 &536825679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23090,6 +23225,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2599680394472947525, guid: 4d75eeb50e3ea8646804ce3b427f9099, type: 3}
   m_PrefabInstance: {fileID: 966668572}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &946821810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946821814}
+  - component: {fileID: 946821813}
+  - component: {fileID: 946821812}
+  - component: {fileID: 946821811}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &946821811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946821810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &946821812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946821810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &946821813
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946821810}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &946821814
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946821810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 141424958}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!4 &948303023 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5579226929146883145, guid: f7ed309e752b90d41a0c546c94a3218f, type: 3}
@@ -29974,7 +30211,7 @@ GameObject:
   - component: {fileID: 1216424889}
   - component: {fileID: 1216424888}
   m_Layer: 6
-  m_Name: Ligth
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36768,7 +37005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 75
   indentLevel: 1
-  text: "Necesito toda la ayuda posible para recueprars mis poderes, podr\xEDas guiarme
+  text: "Necesito toda la ayuda posible para recuperar mis poderes, podr\xEDas guiarme
     hasta el pueblo? (Requiere 10 karma)"
   description: 
   targetBlock: {fileID: 1495025743}
@@ -37039,7 +37276,7 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "lorelai NPC right: Muy bien, dirigete a la derecha y al fondo encontrar\xE1s
+    stringVal: "lorelai NPC right: Muy bien, dir\xEDgete al oeste y al fondo encontrar\xE1s
       la herramienta que necesito.\n\nlorelai hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
@@ -37091,7 +37328,7 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "lorelai NPC right: Suenas un poco endiosado, nunca mejor dicho, pero
-      parece que a\xFAn as\xED me vas a ayudar."
+      parece que aun as\xED me vas a ayudar."
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -37196,7 +37433,7 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "lorelai NPC right: No me extra\xF1a que los magos quisieran robarte
-      tus poderes... (-5 karma)\n\nlorelai hide:"
+      los poderes... (-5 karma)\n\nlorelai hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -37325,7 +37562,7 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "lorelai NPC right: No me extra\xF1a que los magos quisieran robarte
-      tus poderes...\n\nlorelai hide:"
+      los poderes...\n\nlorelai hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -38099,11 +38336,8 @@ MonoBehaviour:
   indentLevel: 1
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'lorelai NPC right: Espero que tengas suerte encontrando la herramienta!
-
-
-      lorelai
-      hide:'
+    stringVal: "lorelai NPC right: \xA1Espero que tengas suerte encontrando la herramienta!\n\nlorelai
+      hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -38580,14 +38814,14 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "lorelai NPC right: \xA1Un momento\u2026 ese cabello ondulante\u2026
       eres t\xFA! \xA1El de los murales! El dios ca\xEDdo.\nastrion astrion_mc left:
-      \xBFComo que Ca\xEDdo? \xBFDe qu\xE9 est\xE1s hablando? \nlorelai NPC right:
+      \xBFC\xF3mo que Ca\xEDdo? \xBFDe qu\xE9 est\xE1s hablando? \nlorelai NPC right:
       \xBFNo recuerdas que pas\xF3? No te preocupes, porque yo soy una experta en
       conocer el pasado. \xA1Tu historia es fascinante! Y tambi\xE9n terrible. Pero
-      sobre todo fascinante.\nastrion astrion_mc left: Cu\xE9ntame qu\xE9 ha sucedido.\nlorelai
-      NPC right: Unos magos malvados te robaron los poderes y est\xE1n causando estragos
-      en todo el mundo. Si me ayudas a recuperar algo importante para ayudar a la
-      gente del pueblo, te dar\xE9 m\xE1s informaci\xF3n.\n\nastrion hide:\r\nlorelai
-      hide:"
+      sobre todo fascinante.\nastrion astrion_mc left: Cu\xE9ntame, \xBFqu\xE9 ha
+      sucedido?\nlorelai NPC right: Unos magos malvados te robaron los poderes y
+      est\xE1n causando estragos en todo el mundo. Si me ayudas a recuperar algo
+      importante para ayudar a la gente del pueblo, te dar\xE9 m\xE1s informaci\xF3n.\n\nastrion
+      hide:\r\nlorelai hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -38827,7 +39061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 158.60617, y: 270.79898}
+  scrollPos: {x: 39.288006, y: 270.799}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 499
@@ -38839,9 +39073,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1495025735}
+  - {fileID: 1495025746}
   selectedCommands:
-  - {fileID: 1495025730}
+  - {fileID: 1495025714}
   variables:
   - {fileID: 1495025745}
   - {fileID: 1495025736}
@@ -55274,6 +55508,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1869685661}
   - {fileID: 1301221957}
+  - {fileID: 946821814}
   - {fileID: 1216424890}
   - {fileID: 737119787}
   - {fileID: 801638419}
