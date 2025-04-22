@@ -46281,7 +46281,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2935588070574455883, guid: 1de69591355a0ef4f8399143f08b9b79, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 205.90472
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 2935588070574455883, guid: 1de69591355a0ef4f8399143f08b9b79, type: 3}
       propertyPath: m_LocalPosition.y
@@ -46299,6 +46299,14 @@ PrefabInstance:
       propertyPath: SceneName
       value: TheHugeMeadow
       objectReference: {fileID: 0}
+    - target: {fileID: 6761831038088155323, guid: 1de69591355a0ef4f8399143f08b9b79, type: 3}
+      propertyPath: positionToSpawn.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761831038088155323, guid: 1de69591355a0ef4f8399143f08b9b79, type: 3}
+      propertyPath: positionToSpawn.y
+      value: 38
+      objectReference: {fileID: 0}
     - target: {fileID: 7044501476636825123, guid: 1de69591355a0ef4f8399143f08b9b79, type: 3}
       propertyPath: m_Camera
       value: 
@@ -46306,6 +46314,10 @@ PrefabInstance:
     - target: {fileID: 7044501476636825123, guid: 1de69591355a0ef4f8399143f08b9b79, type: 3}
       propertyPath: m_RenderMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044501476636825123, guid: 1de69591355a0ef4f8399143f08b9b79, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7603757959830381650, guid: 1de69591355a0ef4f8399143f08b9b79, type: 3}
       propertyPath: m_LocalPosition.x

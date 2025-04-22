@@ -40,6 +40,11 @@ public class CameraFollow : MonoBehaviour
         {
             target = GameObject.FindGameObjectWithTag("Player").transform;
         }
+
+        if (camWorldBounds == null)
+        {
+            camWorldBounds = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<BoundsManager>();
+        }
         cameraHeigth = this.GetComponent<Camera>().orthographicSize;
         cameraWidth = cameraHeigth * Screen.width / Screen.height;
     }
