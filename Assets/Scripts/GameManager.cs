@@ -5,12 +5,16 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject m_questMenu;
-    
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKey(KeyCode.Tab))
         {
-            m_questMenu.SetActive(!m_questMenu.activeSelf);
+            m_questMenu.SetActive(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.Tab))
+        {
+            m_questMenu.SetActive(false);
         }
     }
 }
