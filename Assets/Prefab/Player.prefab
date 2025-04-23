@@ -814,12 +814,12 @@ MonoBehaviour:
   isDashing: 0
   canJump: 1
   canDash: 1
-  GroundCheck: {fileID: 0}
-  LeftWallCheck: {fileID: 0}
-  RightWallCheck: {fileID: 0}
-  RoofDetector: {fileID: 0}
-  UpCrouchCollider: {fileID: 0}
-  DownCrouchCollider: {fileID: 0}
+  GroundCheck: {fileID: 882167160002267225}
+  LeftWallCheck: {fileID: 6826892487159740655}
+  RightWallCheck: {fileID: 5206778599396701624}
+  RoofDetector: {fileID: 4768638505976113231}
+  UpCrouchCollider: {fileID: 7417624710645777250}
+  DownCrouchCollider: {fileID: 5903377319003102783}
   Player_Full: {fileID: 21300000, guid: ba552fc62e95d0549978b33e1771c069, type: 3}
   Player_Up: {fileID: 21300000, guid: 27b1101fc977f2345bb1760593cea391, type: 3}
   Player_Down: {fileID: 21300000, guid: 282e9e5c9ef83244b8c60f6b06939a8e, type: 3}
@@ -834,7 +834,7 @@ MonoBehaviour:
     m_Bits: 512
   roofMask:
     serializedVersion: 2
-    m_Bits: 1025
+    m_Bits: 1024
   movement: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   jumpingHold: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   crouchingHold: {fileID: 7040659881675835329, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
@@ -1232,7 +1232,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8344784690478132799}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: af5ea4b4d16560148bfc04c0311630e8, type: 2}
   m_CullingMode: 0
