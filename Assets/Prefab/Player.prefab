@@ -787,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0f129fe9b397547bb125cd18a235aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStateMessage: GROUND, LEFT
+  playerStateMessage: CROUCH, RIGHT
   unlockAirDash: 0
   unlockDoubleJump: 0
   speed: 50
@@ -795,9 +795,9 @@ MonoBehaviour:
   airSpeedReduction: 3
   crouchSpeedReduction: 2
   icedFloorEffect: 1
-  minJumpForce: 450
-  maxJumpTime: 0.1
-  jumpForceMultiplier: 14
+  minJumpForce: 500
+  maxJumpTime: 0.2
+  jumpForceMultiplier: 20
   fallmultiplier: 4.2
   coyoteTime: 0.07
   dashForce: 500
@@ -806,7 +806,7 @@ MonoBehaviour:
   maxAngleFloor: 40
   impactHit: 1000
   isGrounded: 1
-  flipAnimation: 1
+  flipAnimation: 0
   isTooMuchEarring: 0
   doubleJump: 0
   hasImpactHit: 0
@@ -814,12 +814,12 @@ MonoBehaviour:
   isDashing: 0
   canJump: 1
   canDash: 1
-  GroundCheck: {fileID: 882167160002267225}
-  LeftWallCheck: {fileID: 5206778599396701624}
-  RightWallCheck: {fileID: 6826892487159740655}
-  RoofDetector: {fileID: 4768638505976113231}
-  UpCrouchCollider: {fileID: 7417624710645777250}
-  DownCrouchCollider: {fileID: 5903377319003102783}
+  GroundCheck: {fileID: 0}
+  LeftWallCheck: {fileID: 0}
+  RightWallCheck: {fileID: 0}
+  RoofDetector: {fileID: 0}
+  UpCrouchCollider: {fileID: 0}
+  DownCrouchCollider: {fileID: 0}
   Player_Full: {fileID: 21300000, guid: ba552fc62e95d0549978b33e1771c069, type: 3}
   Player_Up: {fileID: 21300000, guid: 27b1101fc977f2345bb1760593cea391, type: 3}
   Player_Down: {fileID: 21300000, guid: 282e9e5c9ef83244b8c60f6b06939a8e, type: 3}

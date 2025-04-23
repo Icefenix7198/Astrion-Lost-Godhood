@@ -355,7 +355,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5128077914675520205, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128077914675520205, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: maxJumpTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128077914675520205, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: minJumpForce
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128077914675520205, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: flipAnimation
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128077914675520205, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: playerStateMessage
+      value: CROUCH, RIGHT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128077914675520205, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: jumpForceMultiplier
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8344784690478132799, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: m_Name
