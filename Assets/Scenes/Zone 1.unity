@@ -4247,6 +4247,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1
       objectReference: {fileID: 0}
@@ -4297,22 +4305,30 @@ PrefabInstance:
     - target: {fileID: 3065895132189854937, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ba552fc62e95d0549978b33e1771c069, type: 3}
+      objectReference: {fileID: 460488260, guid: cc7534248f3593d48bb663cfef279b05, type: 3}
     - target: {fileID: 5128077914675520205, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: Player_Full
       value: 
-      objectReference: {fileID: 21300000, guid: ba552fc62e95d0549978b33e1771c069, type: 3}
+      objectReference: {fileID: 460488260, guid: cc7534248f3593d48bb663cfef279b05, type: 3}
     - target: {fileID: 5392348142607108482, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5409146145092306769, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5543945196113159091, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: enemyMask.m_Bits
       value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417624710645777250, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417624710645777250, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 5.83
       objectReference: {fileID: 0}
     - target: {fileID: 8344784690478132799, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
       propertyPath: m_Name
@@ -5130,6 +5146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Flowchart: {fileID: 484534300}
   m_CharacterControllerScript: {fileID: 1452830954}
+  m_CombatScript: {fileID: 0}
   m_iconGO: {fileID: 613124716}
 --- !u!114 &964783734
 MonoBehaviour:
