@@ -12,6 +12,13 @@ public class NpcCollision : MonoBehaviour
 
     [SerializeField] private GameObject m_iconGO;
 
+    [SerializeField] private MCDialogueManager m_DialogueManager;
+
+    private void Start()
+    {
+            m_DialogueManager = GetComponent<MCDialogueManager>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -19,13 +26,21 @@ public class NpcCollision : MonoBehaviour
             if (m_Flowchart != null)
             {
                 m_Flowchart.gameObject.SetActive(true);
+
+                if (m_DialogueManager != null)
+                {
+                    m_DialogueManager.SetDialogue();
+                }
             }
 
             // Implement logic to show the button to press in order to start the dialogue
             m_CharacterControllerScript = collision.GetComponent<Character_Controller>();
             m_CombatScript = collision.GetComponent<Combat>();
 
-            m_iconGO.SetActive(true);
+            if (m_iconGO != null)
+            {
+                m_iconGO.SetActive(true);
+            }
         }
     }
 
@@ -38,7 +53,10 @@ public class NpcCollision : MonoBehaviour
                 m_Flowchart.gameObject.SetActive(false);
             }
 
-            m_iconGO.SetActive(false);
+            if (m_iconGO != null)
+            {
+                m_iconGO.SetActive(false);
+            }
         }
     }
 
@@ -48,7 +66,11 @@ public class NpcCollision : MonoBehaviour
         {
             m_CharacterControllerScript.enabled = active;
             m_CombatScript.enabled = active;
-            m_iconGO.SetActive(active);
+
+            if (m_iconGO != null)
+            {
+                m_iconGO.SetActive(active);
+            }
         }
     }
 }
