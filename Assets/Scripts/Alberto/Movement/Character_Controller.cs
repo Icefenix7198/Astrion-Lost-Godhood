@@ -463,7 +463,8 @@ public class Character_Controller : MonoBehaviour
         UnlockHabilities(habilityUnlocker);
 
         //Aniamte the player
-        //AnimatePlayer();
+        AnimatePlayer();
+
         if (flipAnimation) //Flip the animation if it is necesary
         {
             playerSprite.flipX = true;
@@ -1195,7 +1196,7 @@ public class Character_Controller : MonoBehaviour
                 animator.enabled = true;
             }
 
-            if (rb.velocity.magnitude > 0.1f && move.x != 0 && move.y == 0 && playerState == PLAYER_STATUS.GROUND)
+            if (rb.velocity.magnitude > 0.1f && move.x != 0 && move.y == 0/* && playerState == PLAYER_STATUS.GROUND*/)
             {
                 animator.SetBool("Idle", false);
                 animator.SetBool("Run", true);
@@ -1206,24 +1207,24 @@ public class Character_Controller : MonoBehaviour
             }
 
             //Set an animation of jumping, and falling from jump
-            if (rb.velocity.y > 0f && (playerState == PLAYER_STATUS.AIR || playerState == PLAYER_STATUS.JUMP))
-            {
-                animator.SetBool("Idle", false);
-                animator.SetBool("Jump", true);
-            }
-            else if (rb.velocity.y <= 0f && playerState == PLAYER_STATUS.AIR)
-            {
-                animator.SetBool("Jump", false);
-            }
+            //if (rb.velocity.y > 0f && (playerState == PLAYER_STATUS.AIR || playerState == PLAYER_STATUS.JUMP))
+            //{
+            //    animator.SetBool("Idle", false);
+            //    animator.SetBool("Jump", true);
+            //}
+            //else if (rb.velocity.y <= 0f && playerState == PLAYER_STATUS.AIR)
+            //{
+            //    animator.SetBool("Jump", false);
+            //}
 
-            //Idle is to return from jumping and wait to touch ground
-            if (!animator.GetBool("Jump") && !animator.GetBool("Run"))
-            {
-                if ((playerState == PLAYER_STATUS.GROUND || playerState == PLAYER_STATUS.JUMP) && !animator.GetBool("Idle"))
-                {
-                    animator.SetBool("Idle", true);
-                }
-            }
+            ////Idle is to return from jumping and wait to touch ground
+            //if (!animator.GetBool("Jump") && !animator.GetBool("Run"))
+            //{
+            //    if ((playerState == PLAYER_STATUS.GROUND || playerState == PLAYER_STATUS.JUMP) && !animator.GetBool("Idle"))
+            //    {
+            //        animator.SetBool("Idle", true);
+            //    }
+            //}
         }
         else
         {
