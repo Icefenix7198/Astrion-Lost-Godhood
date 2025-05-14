@@ -11,7 +11,7 @@ public class OnCollisionActivateScript : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Character_Controller>() != null)
         {
-            Debug.Log("Player Active UwU");
+            Debug.Log("Player Active");
             collision.gameObject.GetComponent<Character_Controller>().enabled = enable;
         }
     }
