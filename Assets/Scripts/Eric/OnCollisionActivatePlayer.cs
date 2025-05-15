@@ -13,6 +13,7 @@ public class OnCollisionActivateScript : MonoBehaviour
         {
             Debug.Log("Player Active");
             collision.gameObject.GetComponent<Character_Controller>().enabled = enable;
+            collision.gameObject.GetComponent<PlayerHealth>().ActivateSprites();
         }
     }
 }
