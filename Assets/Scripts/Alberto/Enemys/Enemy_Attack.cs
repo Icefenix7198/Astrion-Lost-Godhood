@@ -4,21 +4,49 @@ using UnityEngine;
 
 public class Enemy_Attack : MonoBehaviour
 {
-    SpriteRenderer sprite;
-    
+    public int attackDamage;
+    public float attackCooldown;
+    float attackTimer;
+
+    bool isPlayer;
+    PlayerHealth pH;
 
     // Start is called before the first frame update
     void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+        attackTimer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (sprite.flipX)
+        if(isPlayer && pH != null)
         {
-            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x * -1, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
+            attackTimer += Time.deltaTime;
+
+            if(attackTimer > attackCooldown)
+            {
+                pH.TakeDamage(attackDamage);
+                attackTimer = 0;
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && !isPlayer)
+        {
+            pH = collision.GetComponent<PlayerHealth>();
+            isPlayer = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && isPlayer)
+        {
+            isPlayer = false;
+            attackTimer = 0;
         }
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public int playerHealth;
+    int maxPlayerHealth;
 
     public GameObject canvasUI;
     public List<Image> hearthSprites;
@@ -14,10 +15,13 @@ public class PlayerHealth : MonoBehaviour
 
     public bool activateSprites;
 
+    public GameObject spawnPosition;
+
     // Start is called before the first frame update
     void Start()
     {
         lifeQuantity = playerHealth / hearthSprites.Count;
+        maxPlayerHealth = playerHealth;
 
         activateSprites = false;
         DontDestroyOnLoad(canvasUI);
@@ -45,11 +49,22 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage(10);
         }
+
+        if(spawnPosition == null)
+        {
+            spawnPosition = GameObject.Find("SpawnPosition").gameObject;
+        }
     }
 
     public void TakeDamage(int damage)
     {
         playerHealth -= damage;
+
+        if(playerHealth <= 0)
+        {
+            this.transform.position = spawnPosition.transform.position;
+            playerHealth = maxPlayerHealth;
+        }
     }
 
     public void ActivateSprites()
