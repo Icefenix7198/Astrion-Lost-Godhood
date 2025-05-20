@@ -13,11 +13,23 @@ namespace EnemyHealthNamespace
         public bool unlocksDoor;
         public GameObject door;
 
+        private QuestCompletionKill m_QuestKill;
+
+        private void Start()
+        {
+              m_QuestKill = GetComponent<QuestCompletionKill>();
+        }
+
         private void Update()
         {
             if (life <= 0)
             {
-                Destroy(this.gameObject);
+                if (m_QuestKill != null)
+                {
+                    m_QuestKill.CompleteQuest();
+                }
+
+                Destroy(gameObject);
 
                 if (unlocksDoor)
                 {

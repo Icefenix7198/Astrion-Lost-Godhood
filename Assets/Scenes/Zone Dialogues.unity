@@ -247,6 +247,248 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &26928295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 26928310}
+  - component: {fileID: 26928309}
+  - component: {fileID: 26928308}
+  - component: {fileID: 26928307}
+  - component: {fileID: 26928306}
+  - component: {fileID: 26928296}
+  - component: {fileID: 26928311}
+  m_Layer: 0
+  m_Name: Flowchart Final combate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &26928296
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26928295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000864f8e9e1748a39807861d0e60e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 26928308}
+  suppressBlockAutoSelect: 0
+  keyPressType: 0
+  keyCode: 101
+--- !u!114 &26928306
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26928295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 107
+  indentLevel: 0
+  description: Disable player movement
+  targetObject: {fileID: 964783729}
+  targetComponentAssemblyName: NpcCollision, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: NpcCollision
+  targetMethod: EnablePlayer
+  targetMethodText: 'EnablePlayer (Boolean): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Boolean
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &26928307
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26928295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 104
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "astrion astrion_mc left: Con mis poderes no habr\xEDa costado tanto.\n\neldrin
+      right: \xA1Mis huesos lo sab\xEDan! \xA1Mi se\xF1or, oh, mi divino se\xF1or
+      Astrion ha regresado!\n\nastrion astrion_mc hide:\r\n\neldrin right hide: \n"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &26928308
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26928295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 67
+    y: 70
+    width: 77
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 0
+  blockName: Final
+  description: 
+  eventHandler: {fileID: 26928296}
+  commandList:
+  - {fileID: 26928306}
+  - {fileID: 26928307}
+  - {fileID: 26928311}
+  suppressAllAutoSelections: 0
+--- !u!114 &26928309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26928295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  scrollPos: {x: 181, y: 78.5}
+  variablesScrollPos: {x: 0, y: 0}
+  variablesExpanded: 1
+  blockViewHeight: 400
+  zoom: 1
+  scrollViewRect:
+    serializedVersion: 2
+    x: -343
+    y: -340
+    width: 1114
+    height: 859
+  selectedBlocks:
+  - {fileID: 26928308}
+  selectedCommands:
+  - {fileID: 26928307}
+  variables: []
+  description: 
+  stepPause: 0
+  colorCommands: 1
+  hideComponents: 1
+  saveSelection: 1
+  localizationId: 
+  showLineNumbers: 0
+  hideCommands: []
+  luaEnvironment: {fileID: 0}
+  luaBindingName: flowchart
+--- !u!4 &26928310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26928295}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &26928311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26928295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 108
+  indentLevel: 0
+  description: Disable player movement
+  targetObject: {fileID: 964783729}
+  targetComponentAssemblyName: NpcCollision, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: NpcCollision
+  targetMethod: EnablePlayer
+  targetMethodText: 'EnablePlayer (Boolean): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Boolean
+      intValue: 0
+      boolValue: 1
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &37228985
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,13 +643,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58016006}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.47803354, y: -1.3743572, z: -0.0041995477}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -203.05411, y: -109.44125, z: 3.0507061}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1584169594}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 693926802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &105705583
 GameObject:
@@ -434,12 +676,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105705583}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.750337, y: -0.4393184, z: -0.11426803}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -196.82574, y: -108.50621, z: 2.9406376}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 693926802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &105705585
 MonoBehaviour:
@@ -1084,7 +1326,6 @@ GameObject:
   - component: {fileID: 484534282}
   - component: {fileID: 484534275}
   - component: {fileID: 484534301}
-  - component: {fileID: 484534303}
   - component: {fileID: 484534304}
   - component: {fileID: 484534309}
   - component: {fileID: 484534308}
@@ -1120,7 +1361,6 @@ GameObject:
   - component: {fileID: 484534329}
   - component: {fileID: 484534328}
   - component: {fileID: 484534327}
-  - component: {fileID: 484534326}
   - component: {fileID: 484534325}
   - component: {fileID: 484534324}
   - component: {fileID: 484534323}
@@ -1128,7 +1368,6 @@ GameObject:
   - component: {fileID: 484534348}
   - component: {fileID: 484534349}
   - component: {fileID: 484534351}
-  - component: {fileID: 484534352}
   - component: {fileID: 484534350}
   - component: {fileID: 484534353}
   - component: {fileID: 484534354}
@@ -1150,6 +1389,9 @@ GameObject:
   - component: {fileID: 484534371}
   - component: {fileID: 484534374}
   - component: {fileID: 484534373}
+  - component: {fileID: 484534378}
+  - component: {fileID: 484534377}
+  - component: {fileID: 484534376}
   - component: {fileID: 484534375}
   m_Layer: 0
   m_Name: Flowchart
@@ -1284,8 +1526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 451.41794
-    y: -16.263493
+    x: 438.47662
+    y: -23.322311
     width: 87.80487
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1296,8 +1538,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 484534329}
-  - {fileID: 484534352}
-  - {fileID: 484534303}
+  - {fileID: 484534377}
   suppressAllAutoSelections: 0
 --- !u!114 &484534290
 MonoBehaviour:
@@ -1467,10 +1708,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -2.86223, y: 303.29498}
+  scrollPos: {x: -71.52505, y: 234.49976}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 499
+  blockViewHeight: 487
   zoom: 0.8200002
   scrollViewRect:
     serializedVersion: 2
@@ -1479,8 +1720,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 484534318}
-  selectedCommands: []
+  - {fileID: 484534358}
+  selectedCommands:
+  - {fileID: 484534357}
   variables:
   - {fileID: 484534292}
   - {fileID: 484534304}
@@ -1509,51 +1751,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 35
-  indentLevel: 0
-  description: Enable player movement
-  targetObject: {fileID: 964783729}
-  targetComponentAssemblyName: NpcCollision, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: NpcCollision
-  targetMethod: EnablePlayer
-  targetMethodText: 'EnablePlayer (Boolean): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      typeFullname: System.Boolean
-      intValue: 0
-      boolValue: 1
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &484534303
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484534269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 37
   indentLevel: 0
   description: Enable player movement
   targetObject: {fileID: 964783729}
@@ -2100,8 +2297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 437.46747
-    y: -94.20746
+    x: 560.99677
+    y: -91.85451
     width: 139.02437
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2641,45 +2838,6 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &484534326
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484534269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 81
-  indentLevel: 0
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: "lorelai NPC right: \xA1Te guiar\xE9 sin ning\xFAn problema! Pero
-      antes, te cuento un poco la situaci\xF3n actual.\n\nlorelai NPC right: A ver\u2026
-      resumen r\xE1pido. Cuatro magos, los m\xE1s poderosos que el mundo ha visto
-      jam\xE1s, crearon un ritual. Uno que, en teor\xEDa, nadie podr\xEDa haber completado
-      sin morir en el intento. Pero lo lograron.\n\nlorelai NPC right: Extrajeron
-      tu divinidad. Tomaron el poder del Sol, del Viento, la Nieve y la Lluvia, canalizando
-      su poder en cuatro piedras. Y t\xFA\u2026 t\xFA ca\xEDste. Literalmente, te
-      estrellaste contra el suelo como un meteorito y formaste un cr\xE1ter. Bueno,
-      ese cr\xE1ter. Durante todo este tiempo que has dormido, el poder ha consumido
-      a los Magos, creando una terrible devastaci\xF3n en el mundo.\n\nastrion astrion_mc
-      hide:\r\nlorelai hide:"
-  clearPrevious:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForInput:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForSeconds:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  fadeWhenDone:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
 --- !u!114 &484534327
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2694,18 +2852,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 685.12915
-    y: -37.91397
-    width: 125.60974
+    x: 574.5417
+    y: 27.968365
+    width: 98.78048
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 80
-  blockName: Recompensa
+  blockName: "Decisi\xF3n"
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 484534326}
   - {fileID: 484534370}
   - {fileID: 484534368}
   - {fileID: 484534367}
@@ -2728,7 +2885,7 @@ MonoBehaviour:
   indentLevel: 1
   text: "Expl\xEDcame la historia de lo que ha pasado."
   description: 
-  targetBlock: {fileID: 484534327}
+  targetBlock: {fileID: 484534378}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -2753,9 +2910,17 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "lorelai NPC right: \xA1Sin ning\xFAn problema! Pareces un buen tipo,
-      seguro que nos puedes sacar de esta pesadilla. Te explico la historia por el
-      camino.\n\nlorelai hide:"
+    stringVal: "lorelai NPC right: \xA1Te guiar\xE9 sin ning\xFAn problema! Pero
+      antes, te cuento un poco la situaci\xF3n actual.\n\nlorelai NPC right: A ver\u2026
+      resumen r\xE1pido. Cuatro magos, los m\xE1s poderosos que el mundo ha visto
+      jam\xE1s, crearon un ritual. Uno que, en teor\xEDa, nadie podr\xEDa haber completado
+      sin morir en el intento. Pero lo lograron.\n\nlorelai NPC right: Extrajeron
+      tu divinidad. Tomaron el poder del Sol, del Viento, la Nieve y la Lluvia, canalizando
+      su poder en cuatro piedras. Y t\xFA\u2026 t\xFA ca\xEDste. Literalmente, te
+      estrellaste contra el suelo como un meteorito y formaste un cr\xE1ter. Bueno,
+      ese cr\xE1ter. Durante todo este tiempo que has dormido, el poder ha consumido
+      a los Magos, creando una terrible devastaci\xF3n en el mundo.\n\nastrion astrion_mc
+      hide:\r\nlorelai hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -2822,7 +2987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 75
   indentLevel: 1
-  text: "Necesito toda la ayuda posible para recueprar mis poderes, podr\xEDas guiarme
+  text: "Necesito toda la ayuda posible para recuperar mis poderes, podr\xEDas guiarme
     hasta el pueblo? (Requiere 10 karma)"
   description: 
   targetBlock: {fileID: 484534288}
@@ -3700,7 +3865,7 @@ MonoBehaviour:
   indentLevel: 1
   text: "Expl\xEDcame la historia de lo que ha pasado."
   description: 
-  targetBlock: {fileID: 484534327}
+  targetBlock: {fileID: 484534378}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -4140,158 +4305,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &484534352
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484534269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 89
-  indentLevel: 0
-  anyVar:
-    variable: {fileID: 484534349}
-    data:
-      animatorData:
-        animatorRef: {fileID: 0}
-        animatorVal: {fileID: 0}
-      audioSourceData:
-        audioSourceRef: {fileID: 0}
-        audioSourceVal: {fileID: 0}
-      booleanData:
-        booleanRef: {fileID: 0}
-        booleanVal: 1
-      collectionData:
-        collectionRef: {fileID: 0}
-        collectionVal: {fileID: 0}
-      collider2DData:
-        collider2DRef: {fileID: 0}
-        collider2DVal: {fileID: 0}
-      colliderData:
-        colliderRef: {fileID: 0}
-        colliderVal: {fileID: 0}
-      colorData:
-        colorRef: {fileID: 0}
-        colorVal: {r: 0, g: 0, b: 0, a: 0}
-      floatData:
-        floatRef: {fileID: 0}
-        floatVal: 0
-      gameObjectData:
-        gameObjectRef: {fileID: 0}
-        gameObjectVal: {fileID: 0}
-      integerData:
-        integerRef: {fileID: 0}
-        integerVal: 0
-      materialData:
-        materialRef: {fileID: 0}
-        materialVal: {fileID: 0}
-      matrix4x4Data:
-        matrix4x4Ref: {fileID: 0}
-        matrix4x4Val:
-          e00: 0
-          e01: 0
-          e02: 0
-          e03: 0
-          e10: 0
-          e11: 0
-          e12: 0
-          e13: 0
-          e20: 0
-          e21: 0
-          e22: 0
-          e23: 0
-          e30: 0
-          e31: 0
-          e32: 0
-          e33: 0
-      objectData:
-        objectRef: {fileID: 0}
-        objectVal: {fileID: 0}
-      quaternionData:
-        quaternionRef: {fileID: 0}
-        quaternionVal: {x: 0, y: 0, z: 0, w: 0}
-      rigidbody2DData:
-        rigidbody2DRef: {fileID: 0}
-        rigidbody2DVal: {fileID: 0}
-      rigidbodyData:
-        rigidbodyRef: {fileID: 0}
-        rigidbodyVal: {fileID: 0}
-      spriteData:
-        spriteRef: {fileID: 0}
-        spriteVal: {fileID: 0}
-      stringData:
-        stringRef: {fileID: 0}
-        stringVal: 
-      textureData:
-        textureRef: {fileID: 0}
-        textureVal: {fileID: 0}
-      transformData:
-        transformRef: {fileID: 0}
-        transformVal: {fileID: 0}
-      vector2Data:
-        vector2Ref: {fileID: 0}
-        vector2Val: {x: 0, y: 0}
-      vector3Data:
-        vector3Ref: {fileID: 0}
-        vector3Val: {x: 0, y: 0, z: 0}
-      vector4Data:
-        vector4Ref: {fileID: 0}
-        vector4Val: {x: 0, y: 0, z: 0, w: 0}
-  setOperator: 0
-  variable: {fileID: 0}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &484534353
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4445,8 +4458,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 831.39825
-    y: 90.607346
+    x: 716.3046
+    y: 129.47096
     width: 135.36584
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4884,9 +4897,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "lorelai NPC right: \xA1Tiene todo el sentido! Hay un pueblo aqu\xED
-      al lado con un sacerdote tuyo, ya te guio, y a cambio me cuentas m\xE1s sobre
-      ti y el pasado.\n\nlorelai hide:"
+    stringVal: "lorelai NPC right: \xA1Tiene todo el sentido! En el pueblo hay un
+      sacerdote tuyo, ya te guio, y a cambio me cuentas m\xE1s sobre ti y el pasado.\n\nlorelai
+      hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -4913,8 +4926,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 529.692
-    y: 93.04636
+    x: 413.06052
+    y: 125.98753
     width: 131.7073
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4975,7 +4988,7 @@ MonoBehaviour:
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
-    booleanVal: 0
+    booleanVal: 1
   setMenuDialog: {fileID: 0}
   hideThisOption:
     booleanRef: {fileID: 0}
@@ -5022,9 +5035,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "lorelai NPC right: \xA1Tiene todo el sentido! Hay un pueblo aqu\xED
-      al lado con un sacerdote tuyo, ya te guio, y a cambio me cuentas m\xE1s sobre
-      ti y el pasado. (+5 karma)\n\nlorelai hide:"
+    stringVal: "lorelai NPC right: \xA1Tiene todo el sentido! En el pueblo hay un
+      sacerdote tuyo, ya te guio, y a cambio me cuentas m\xE1s sobre ti y el pasado.\n\nlorelai
+      hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -5051,8 +5064,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 687.4963
-    y: 93.04639
+    x: 564.0477
+    y: 128.42068
     width: 117.07316
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5063,7 +5076,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 484534371}
-  - {fileID: 484534375}
   - {fileID: 484534374}
   - {fileID: 484534373}
   suppressAllAutoSelections: 0
@@ -5255,12 +5267,105 @@ MonoBehaviour:
   m_GameObject: {fileID: 484534269}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8838fdc52ea3e4eba219b901d708dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 115
+  itemId: 119
   indentLevel: 0
-  karmaModification: 5
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 484534327}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &484534376
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484534269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 118
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "lorelai NPC right: A ver\u2026 resumen r\xE1pido. Cuatro magos, los
+      m\xE1s poderosos que el mundo ha visto jam\xE1s, crearon un ritual. Uno que,
+      en teor\xEDa, nadie podr\xEDa haber completado sin morir en el intento. Pero
+      lo lograron.\n\nlorelai NPC right: Extrajeron tu divinidad. Tomaron el poder
+      del Sol, del Viento, la Nieve y la Lluvia, canalizando su poder en cuatro piedras.
+      Y t\xFA\u2026 t\xFA ca\xEDste. Literalmente, te estrellaste contra el suelo
+      como un meteorito y formaste un cr\xE1ter. Bueno, ese cr\xE1ter. Durante todo
+      este tiempo que has dormido, el poder ha consumido a los Magos, creando una
+      terrible devastaci\xF3n en el mundo.\n\nastrion astrion_mc hide:\r\nlorelai
+      hide:"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &484534377
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484534269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 117
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 484534327}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &484534378
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484534269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 721.1264
+    y: -21.587389
+    width: 125.60974
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 116
+  blockName: Recompensa
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 484534376}
+  - {fileID: 484534375}
+  suppressAllAutoSelections: 0
 --- !u!114 &489673101 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3684227615373425206, guid: 2a1949539ac75f14287ef810ff73a122, type: 3}
@@ -5386,7 +5491,7 @@ GameObject:
   - component: {fileID: 519821530}
   - component: {fileID: 519821533}
   m_Layer: 0
-  m_Name: QuestComplete
+  m_Name: QuestCompleteItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5801,13 +5906,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596576945}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.13, y: -5.9, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -211.70609, y: -113.966896, z: 3.0549057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 24244760}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 693926802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &597588099 stripped
 GameObject:
@@ -6028,6 +6133,43 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26cd88b5b3b1fc4aaa15f5400d47f98, type: 3}
+--- !u!1 &693926801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 693926802}
+  m_Layer: 0
+  m_Name: Dialogues start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &693926802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693926801}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 202.57608, y: 108.066895, z: -3.0549057}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 58016007}
+  - {fileID: 2058171960}
+  - {fileID: 596576950}
+  - {fileID: 1663703388}
+  - {fileID: 779814478}
+  - {fileID: 105705584}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779814473
 GameObject:
   m_ObjectHideFlags: 0
@@ -6184,13 +6326,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779814473}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.56, y: -1.651, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -193.01608, y: -109.717896, z: 3.0549057}
   m_LocalScale: {x: 1, y: 1.7629501, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1071071887}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 693926802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &803034579 stripped
 Transform:
@@ -6354,8 +6496,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5121090678493487703, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 914568101}
   m_SourcePrefab: {fileID: 100100000, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
+--- !u!1 &914568100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5121090678493487703, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
+  m_PrefabInstance: {fileID: 914568099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &914568101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914568100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036fa37280ac2d14ca25e9f5490b26f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questToComplete: {fileID: 11400000, guid: 6951f0c6d514eb2408c2d1d4350ef6d2, type: 2}
+  m_activeQuestList: {fileID: 1408887030}
+  m_completedQuestList: {fileID: 489673101}
 --- !u!1 &964783729
 GameObject:
   m_ObjectHideFlags: 0
@@ -6956,7 +7121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 484534300}
+  selectedFlowchart: {fileID: 26928309}
 --- !u!4 &1217789119
 Transform:
   m_ObjectHideFlags: 1
@@ -9759,13 +9924,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663703383}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.83, y: -5.83, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -218.40608, y: -113.8969, z: 3.0549057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1835877280}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 693926802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1676596836
 GameObject:
@@ -11597,13 +11762,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058171957}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.12, y: -3.88, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -207.69608, y: -111.94689, z: 3.0549057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1302679076}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 693926802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2058171961
 MonoBehaviour:
@@ -11636,6 +11801,494 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Flowchart: {fileID: 1584169597}
   m_DialogueId: 1
+--- !u!1 &2080497170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2080497174}
+  - component: {fileID: 2080497173}
+  - component: {fileID: 2080497172}
+  - component: {fileID: 2080497177}
+  - component: {fileID: 2080497175}
+  - component: {fileID: 2080497183}
+  - component: {fileID: 2080497182}
+  - component: {fileID: 2080497181}
+  - component: {fileID: 2080497180}
+  - component: {fileID: 2080497179}
+  - component: {fileID: 2080497178}
+  - component: {fileID: 2080497186}
+  - component: {fileID: 2080497185}
+  - component: {fileID: 2080497184}
+  - component: {fileID: 2080497187}
+  m_Layer: 0
+  m_Name: Flowchart Camino pueblo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2080497172
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 67
+    y: 70
+    width: 89
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 0
+  blockName: Pueblo
+  description: 
+  eventHandler: {fileID: 2080497187}
+  commandList:
+  - {fileID: 2080497175}
+  - {fileID: 2080497177}
+  - {fileID: 2080497179}
+  - {fileID: 2080497178}
+  suppressAllAutoSelections: 0
+--- !u!114 &2080497173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  scrollPos: {x: 181, y: 78.5}
+  variablesScrollPos: {x: 0, y: 0}
+  variablesExpanded: 1
+  blockViewHeight: 400
+  zoom: 1
+  scrollViewRect:
+    serializedVersion: 2
+    x: -343
+    y: -340
+    width: 1114
+    height: 859
+  selectedBlocks:
+  - {fileID: 2080497172}
+  selectedCommands: []
+  variables: []
+  description: 
+  stepPause: 0
+  colorCommands: 1
+  hideComponents: 1
+  saveSelection: 1
+  localizationId: 
+  showLineNumbers: 0
+  hideCommands: []
+  luaEnvironment: {fileID: 0}
+  luaBindingName: flowchart
+--- !u!4 &2080497174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2080497175
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 107
+  indentLevel: 0
+  description: Disable player movement
+  targetObject: {fileID: 964783729}
+  targetComponentAssemblyName: NpcCollision, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: NpcCollision
+  targetMethod: EnablePlayer
+  targetMethodText: 'EnablePlayer (Boolean): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Boolean
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2080497177
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 104
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "lorelai NPC right: Vale, vale, antes de que mi cerebro explote\u2026
+      Preguntas. Muchas. \xA1Demasiadas! N\xFAmero uno: \xBFC\xF3mo se siente ser
+      un dios? \xBFEs como ser humano pero m\xE1s, o es completamente distinto? \xBFSientes
+      el viento aunque no est\xE9 soplando? \xBFO lo eres? \xBFPuedes escuchar las
+      nubes moverse? \xBFLas tormentas te hablan?\n\nastrion astrion_mc left: Hmm\u2026
+      muchas preguntas. A ver\u2026 Ser un dios. Es\u2026 como ser el cielo. Est\xE1s
+      ah\xED. Siempre. No cambia mucho. \xBFY luego que si escucho las nubes hablar?
+      Pues realmente no, solo puedo controlarlas, bueno, pod\xEDa\u2026 Ya me he
+      olvidado del resto de cosas que me has preguntado\u2026\n\nlorelai NPC right:
+      Y ya estar\xEDamos, este es el pueblo, yo me quedo aqu\xED que ahora mismo
+      est\xE1n los soldados del mago de estas praderas. Ten cuidado.\nlorelai hide:\n\nsoldado
+      right: \xA1Alto ah\xED! \xA1\xBFQui\xE9n eres?! \xA1\xBFDe d\xF3nde vienes?!
+      El paso est\xE1 restringido.\n\nastrion astrion_mc hide:\r\nsoldado right hide:
+      \n"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &2080497178
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 119
+  indentLevel: 0
+  text: Apartaos insectos. Tengo que hablar con un mortal de este pueblo.
+  description: 
+  targetBlock: {fileID: 2080497182}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &2080497179
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 118
+  indentLevel: 0
+  text: "Salid del pueblo y no volv\xE1is. Preferir\xEDa no tener que mataros."
+  description: 
+  targetBlock: {fileID: 2080497183}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &2080497180
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 117
+  indentLevel: 0
+  description: Enable player movement
+  targetObject: {fileID: 964783729}
+  targetComponentAssemblyName: NpcCollision, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: NpcCollision
+  targetMethod: EnablePlayer
+  targetMethodText: 'EnablePlayer (Boolean): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Boolean
+      intValue: 0
+      boolValue: 1
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2080497181
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 115
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "soldado right: \xA1T\xFA lo has querido! \xA1A por \xE9l!\n\nsoldado
+      right hide: "
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &2080497182
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 172
+    y: 182.5
+    width: 162
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 114
+  blockName: Combate mal karma
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2080497185}
+  - {fileID: 2080497186}
+  - {fileID: 2080497184}
+  suppressAllAutoSelections: 0
+--- !u!114 &2080497183
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -118
+    y: 184.5
+    width: 142
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 113
+  blockName: Combate normal
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2080497181}
+  - {fileID: 2080497180}
+  suppressAllAutoSelections: 0
+--- !u!114 &2080497184
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 122
+  indentLevel: 0
+  description: Enable player movement
+  targetObject: {fileID: 964783729}
+  targetComponentAssemblyName: NpcCollision, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: NpcCollision
+  targetMethod: EnablePlayer
+  targetMethodText: 'EnablePlayer (Boolean): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Boolean
+      intValue: 0
+      boolValue: 1
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2080497185
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 121
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "soldado right: \xA1Pero ser\xE1 posible, qui\xE9n te crees qu\xE9
+      eres! \xA1A por \xE9l! (-5 karma)\n\nsoldado right hide: "
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &2080497186
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8838fdc52ea3e4eba219b901d708dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 120
+  indentLevel: 0
+  karmaModification: -5
+--- !u!114 &2080497187
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080497170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000864f8e9e1748a39807861d0e60e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 2080497172}
+  suppressBlockAutoSelect: 0
+  keyPressType: 0
+  keyCode: 101
 --- !u!1 &2085810577
 GameObject:
   m_ObjectHideFlags: 0
@@ -11891,9 +12544,6 @@ SceneRoots:
   - {fileID: 2040492573}
   - {fileID: 519821532}
   - {fileID: 245130454}
-  - {fileID: 58016007}
-  - {fileID: 2058171960}
-  - {fileID: 596576950}
-  - {fileID: 1663703388}
-  - {fileID: 779814478}
-  - {fileID: 105705584}
+  - {fileID: 693926802}
+  - {fileID: 2080497174}
+  - {fileID: 26928310}
