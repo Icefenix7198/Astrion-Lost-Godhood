@@ -3981,11 +3981,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Ground_156
+      name: TX Tileset Ground_157
       rect:
         serializedVersion: 2
-        x: 320
-        y: 480
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -4076,7 +4076,7 @@ TextureImporter:
       TX Tileset Ground_153: -5362793937043775683
       TX Tileset Ground_154: 4886821488786415864
       TX Tileset Ground_155: 1381906735602185634
-      TX Tileset Ground_156: 3819963029724104715
+      TX Tileset Ground_157: 3819963029724104715
       TX Tileset Ground_16: -347825661036356991
       TX Tileset Ground_17: -1766223703499644226
       TX Tileset Ground_18: 5918128945180904696
