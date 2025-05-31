@@ -153828,6 +153828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_QuestMenu: {fileID: 2125248869}
   m_NPCsGO: {fileID: 1756307047}
+  m_Canvas: {fileID: 1385434723}
 --- !u!4 &1393636249
 Transform:
   m_ObjectHideFlags: 0

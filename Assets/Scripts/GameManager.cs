@@ -4,6 +4,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject m_QuestMenu;
     [SerializeField] private GameObject m_NPCsGO;
+    [SerializeField] private GameObject m_Canvas;
+    
     public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -14,6 +16,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             DontDestroyOnLoad(m_QuestMenu);
             DontDestroyOnLoad(m_NPCsGO);
+            DontDestroyOnLoad(m_Canvas);
         }
         else
         {
