@@ -1,13 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class Teleport_TP : MonoBehaviour
 {
     public List<GameObject> tps;
     public GameObject player;
+    public GameObject questMonster;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +22,10 @@ public class Teleport_TP : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F1))
             {
                 player.transform.position = tps[0].transform.position;
+                if (questMonster != null)
+                {
+                    questMonster.GetComponent<NpcQuest>().AddQuest();
+                }
             }
             else if (Input.GetKeyDown(KeyCode.F2))
             {

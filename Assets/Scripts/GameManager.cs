@@ -1,20 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject m_questMenu;
+    [SerializeField] private GameObject m_QuestMenu;
+    [SerializeField] private GameObject m_NPCsGO;
+    public static GameManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(m_QuestMenu);
+            DontDestroyOnLoad(m_NPCsGO);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Update()
     {
         if (Input.GetKey(KeyCode.Tab))
         {
-            m_questMenu.SetActive(true);
+            m_QuestMenu.SetActive(true);
         }
         else if (Input.GetKeyUp(KeyCode.Tab))
         {
-            m_questMenu.SetActive(false);
+            m_QuestMenu.SetActive(false);
         }
     }
 }

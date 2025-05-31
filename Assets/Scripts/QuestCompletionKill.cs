@@ -1,11 +1,6 @@
 using CleverCrow.Fluid.QuestJournals;
 using CleverCrow.Fluid.QuestJournals.Examples;
 using CleverCrow.Fluid.QuestJournals.Quests;
-using EnemyHealthNamespace;
-using Fungus;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class QuestCompletionKill : MonoBehaviour
