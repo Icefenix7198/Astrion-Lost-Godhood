@@ -9817,7 +9817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1531983960}
+  selectedFlowchart: {fileID: 300136798}
 --- !u!4 &289511910
 Transform:
   m_ObjectHideFlags: 1
@@ -10040,8 +10040,9 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "astrion astrion_mc left: Con mis poderes no habr\xEDa costado tanto.\n\neldrin
-      right: \xA1Mis huesos lo sab\xEDan! \xA1Mi se\xF1or, oh, mi divino se\xF1or
-      Astrion ha regresado!\n\nastrion astrion_mc hide:\r\n\neldrin right hide: \n"
+      Eldrin right: \xA1Mis huesos lo sab\xEDan! \xA1Mi se\xF1or, oh, mi divino se\xF1or
+      Astrion ha regresado!\n\nastrion astrion_mc hide:\r\n\neldrin Eldrin hide:
+      \n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -10107,10 +10108,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 300136797}
-  selectedCommands:
-  - {fileID: 300136793}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -37021,6 +37020,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9196149782626056653, guid: d34a4953d02e34149b7257014f7836d6, type: 3}
   m_PrefabInstance: {fileID: 1302863275}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1131829037
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 168.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21.81407
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039279665124474527, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344784690478132799, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3aa44c13d5431024e8ec90bc861b8aae, type: 3}
 --- !u!1001 &1136275275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38915,7 +38971,6 @@ GameObject:
   - component: {fileID: 1395908646}
   - component: {fileID: 1395908645}
   - component: {fileID: 1395908644}
-  - component: {fileID: 1395908643}
   m_Layer: 0
   m_Name: NPC Eldrin
   m_TagString: NPC
@@ -38923,20 +38978,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1395908643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395908642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3b5c64d0162234ca84efcdda26ae63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Flowchart: {fileID: 0}
-  m_DialogueId: 4
 --- !u!114 &1395908644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38986,7 +39027,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.68, y: 2.55}
+  m_Offset: {x: 0.10704708, y: 4.109458}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -38997,7 +39038,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 30, y: 14}
+  m_Size: {x: 41.005028, y: 17.118917}
   m_EdgeRadius: 0
 --- !u!212 &1395908646
 SpriteRenderer:
@@ -39060,8 +39101,8 @@ Transform:
   m_GameObject: {fileID: 1395908642}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 186.42, y: -21.57, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalPosition: {x: 186.6463, y: -21.9078, z: 0}
+  m_LocalScale: {x: 0.18630779, y: 0.19209257, z: 0.23904002}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1421543856}
@@ -39145,7 +39186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1421543855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39207,8 +39248,8 @@ Transform:
   m_GameObject: {fileID: 1421543854}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.26665092, y: 3.5666647, z: 0}
-  m_LocalScale: {x: 0.24907999, y: 0.24907999, z: 0.24907999}
+  m_LocalPosition: {x: 0.26665092, y: 3.91, z: 0}
+  m_LocalScale: {x: 0.6607843, y: 0.6607843, z: 0.6607843}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1395908647}
@@ -39353,8 +39394,8 @@ Transform:
   m_GameObject: {fileID: 1440271579}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8249807, y: 2.610001, z: 0}
-  m_LocalScale: {x: 0.24907999, y: 0.24907999, z: 0.24907999}
+  m_LocalPosition: {x: 0.03, y: 4.3716016, z: 0}
+  m_LocalScale: {x: 0.6607843, y: 0.6607843, z: 0.6607843}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2115526468}
@@ -52688,8 +52729,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "soldado right: \xA1Pero ser\xE1 posible, qui\xE9n te crees qu\xE9
-      eres! \xA1A por \xE9l! (-5 karma)\n\nsoldado right hide: "
+    stringVal: "soldado GoldenSoldier right: \xA1Pero ser\xE1 posible, qui\xE9n te
+      crees qu\xE9 eres! \xA1A por \xE9l! (-5 karma)\n\nsoldado GoldenSoldier hide: "
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -52828,8 +52869,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "soldado right: \xA1T\xFA lo has querido! \xA1A por \xE9l!\n\nsoldado
-      right hide: "
+    stringVal: "soldado GoldenSoldier right: \xA1T\xFA lo has querido! \xA1A por
+      \xE9l!\n\nsoldado GoldenSoldier hide: "
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -52971,9 +53012,9 @@ MonoBehaviour:
       olvidado del resto de cosas que me has preguntado\u2026\n\nlorelai NPC right:
       Y ya estar\xEDamos, este es el pueblo, yo me quedo aqu\xED que ahora mismo
       est\xE1n los soldados del mago de estas praderas. Ten cuidado.\nlorelai hide:\n\nsoldado
-      right: \xA1Alto ah\xED! \xA1\xBFQui\xE9n eres?! \xA1\xBFDe d\xF3nde vienes?!
-      El paso est\xE1 restringido.\n\nastrion astrion_mc hide:\r\nsoldado right hide:
-      \n"
+      GoldenSoldier right: \xA1Alto ah\xED! \xA1\xBFQui\xE9n eres?! \xA1\xBFDe d\xF3nde
+      vienes?! El paso est\xE1 restringido.\n\nastrion astrion_mc hide:\r\nsoldado
+      GoldenSoldier hide: \n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -53043,7 +53084,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1531983955}
   selectedCommands:
-  - {fileID: 1531983948}
+  - {fileID: 1531983949}
   variables: []
   description: 
   stepPause: 0
@@ -57859,7 +57900,6 @@ GameObject:
   - component: {fileID: 2115526467}
   - component: {fileID: 2115526466}
   - component: {fileID: 2115526465}
-  - component: {fileID: 2115526464}
   m_Layer: 0
   m_Name: NPC Soldado
   m_TagString: NPC
@@ -57867,20 +57907,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2115526464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2115526463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3b5c64d0162234ca84efcdda26ae63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Flowchart: {fileID: 0}
-  m_DialogueId: 4
 --- !u!114 &2115526465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57930,7 +57956,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.37, y: 0.82933545}
+  m_Offset: {x: -2.37, y: 0.44727814}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -57941,7 +57967,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20, y: 7}
+  m_Size: {x: 20, y: 7.7641144}
   m_EdgeRadius: 0
 --- !u!212 &2115526467
 SpriteRenderer:
@@ -58004,8 +58030,8 @@ Transform:
   m_GameObject: {fileID: 2115526463}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 170.53, y: -21.5, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalPosition: {x: 170.7654, y: -21.5847, z: 0}
+  m_LocalScale: {x: 0.27644, y: 0.27644, z: 0.27644}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1440271581}
@@ -58154,3 +58180,4 @@ SceneRoots:
   - {fileID: 1531983961}
   - {fileID: 300136799}
   - {fileID: 289511910}
+  - {fileID: 1131829037}
