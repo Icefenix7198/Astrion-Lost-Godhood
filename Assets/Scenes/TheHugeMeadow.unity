@@ -9817,7 +9817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1531983960}
+  selectedFlowchart: {fileID: 300136798}
 --- !u!4 &289511910
 Transform:
   m_ObjectHideFlags: 1
@@ -9993,7 +9993,7 @@ MonoBehaviour:
   itemId: 107
   indentLevel: 0
   description: Disable player movement
-  targetObject: {fileID: 2115526463}
+  targetObject: {fileID: 1395908642}
   targetComponentAssemblyName: NpcCollision, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -10108,8 +10108,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 300136797}
+  selectedCommands:
+  - {fileID: 300136795}
   variables: []
   description: 
   stepPause: 0
@@ -53413,20 +53415,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "lorelai NPC right: Vale, vale, antes de que mi cerebro explote\u2026
-      Preguntas. Muchas. \xA1Demasiadas! N\xFAmero uno: \xBFC\xF3mo se siente ser
-      un dios? \xBFEs como ser humano pero m\xE1s, o es completamente distinto? \xBFSientes
-      el viento aunque no est\xE9 soplando? \xBFO lo eres? \xBFPuedes escuchar las
-      nubes moverse? \xBFLas tormentas te hablan?\n\nastrion astrion_mc left: Hmm\u2026
-      muchas preguntas. A ver\u2026 Ser un dios. Es\u2026 como ser el cielo. Est\xE1s
-      ah\xED. Siempre. No cambia mucho. \xBFY luego que si escucho las nubes hablar?
-      Pues realmente no, solo puedo controlarlas, bueno, pod\xEDa\u2026 Ya me he
-      olvidado del resto de cosas que me has preguntado\u2026\n\nlorelai NPC right:
-      Y ya estar\xEDamos, este es el pueblo, yo me quedo aqu\xED que ahora mismo
-      est\xE1n los soldados del mago de estas praderas. Ten cuidado.\nlorelai hide:\n\nsoldado
-      GoldenSoldier right: \xA1Alto ah\xED! \xA1\xBFQui\xE9n eres?! \xA1\xBFDe d\xF3nde
-      vienes?! El paso est\xE1 restringido.\n\nastrion astrion_mc hide:\r\nsoldado
-      GoldenSoldier hide: \n"
+    stringVal: "soldado GoldenSoldier right: \xA1Alto ah\xED! \xA1\xBFQui\xE9n eres?!
+      \xA1\xBFDe d\xF3nde vienes?! El paso est\xE1 restringido.\n\nastrion astrion_mc
+      hide:\r\nsoldado GoldenSoldier hide: \n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -53493,8 +53484,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1531983959}
+  selectedCommands:
+  - {fileID: 1531983957}
   variables: []
   description: 
   stepPause: 0
