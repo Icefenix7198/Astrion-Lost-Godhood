@@ -5,13 +5,14 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public List<EnemyBasicPathfinding> enemyList;
+    public GameObject objToDestroy;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            EnableEnemies();
-        }
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    EnableEnemies();
+        //}
     }
 
     public void EnableEnemies()
@@ -19,6 +20,12 @@ public class EnemyManager : MonoBehaviour
         for (int i = 0; i < enemyList.Count; i++)
         {
             enemyList[i].enabled = true;
+            enemyList[i].transform.GetChild(1).GetComponent<Enemy_Attack>().enabled = true;
+        }
+
+        if(objToDestroy != null)
+        {
+            Destroy(objToDestroy);
         }
     }
 }

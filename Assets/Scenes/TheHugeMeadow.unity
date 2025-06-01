@@ -10870,6 +10870,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7744230110419505705, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744230110419505705, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
       propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
@@ -11810,6 +11814,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6893556795282774989, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744230110419505705, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7744230110419505705, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
@@ -34841,6 +34849,7 @@ MonoBehaviour:
   - {fileID: 1338809716}
   - {fileID: 469056153}
   - {fileID: 351209233}
+  objToDestroy: {fileID: 2115526463}
 --- !u!4 &842256786
 Transform:
   m_ObjectHideFlags: 0
@@ -38486,6 +38495,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6893556795282774989, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744230110419505705, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7744230110419505705, guid: 38d70fd15f2e5114593ea0263b0ca25e, type: 3}
