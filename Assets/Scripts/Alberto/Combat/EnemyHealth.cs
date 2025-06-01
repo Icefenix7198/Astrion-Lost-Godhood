@@ -33,7 +33,10 @@ namespace EnemyHealthNamespace
 
                 if (unlocksDoor)
                 {
-                    Destroy(door);
+                    if(door != null)
+                    {
+                        Destroy(door);
+                    }
                 }
             }
         }

@@ -12,12 +12,15 @@ public class EnemyBasicPathfinding : MonoBehaviour
     GameObject player;
     SpriteRenderer spriteRenderer;
 
+    public bool flipped;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").gameObject;
         spriteRenderer = GetComponent<SpriteRenderer>();
         followPlayer = false;
+        target = player.transform;
     }
 
     private void FixedUpdate()
@@ -41,20 +44,39 @@ public class EnemyBasicPathfinding : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if(this.enabled)
         {
-            Debug.Log("Hit Player");
-        }
+            if (collision.CompareTag("Player"))
+            {
+                Debug.Log("Hit Player");
+            }
 
-        if (collision.gameObject.transform.position.x > this.transform.position.x)
-        {
-            spriteRenderer.flipX = true;
-            attackZone.transform.localPosition = new Vector3(Mathf.Abs(attackZone.transform.localPosition.x), attackZone.transform.localPosition.y, attackZone.transform.localPosition.z);
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
-            attackZone.transform.localPosition = new Vector3(-Mathf.Abs(attackZone.transform.localPosition.x), attackZone.transform.localPosition.y, attackZone.transform.localPosition.z);
+            if (collision.gameObject.transform.position.x > this.transform.position.x)
+            {
+                if (flipped)
+                {
+                    spriteRenderer.flipX = false;
+                }
+                else
+                {
+                    spriteRenderer.flipX = true;
+                }
+
+                attackZone.transform.localPosition = new Vector3(Mathf.Abs(attackZone.transform.localPosition.x), attackZone.transform.localPosition.y, attackZone.transform.localPosition.z);
+            }
+            else
+            {
+                if (flipped)
+                {
+                    spriteRenderer.flipX = true;
+                }
+                else
+                {
+                    spriteRenderer.flipX = false;
+                }
+
+                attackZone.transform.localPosition = new Vector3(-Mathf.Abs(attackZone.transform.localPosition.x), attackZone.transform.localPosition.y, attackZone.transform.localPosition.z);
+            }
         }
     }
 }
