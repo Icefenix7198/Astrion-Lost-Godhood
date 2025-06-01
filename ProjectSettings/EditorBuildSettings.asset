@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheHugeMeadow.unity
     guid: 15771eb4e998b8d4899d52c7b466316d
+  - enabled: 1
+    path: Assets/Scenes/End_Scene.unity
+    guid: c78b69f3a81ec84438d4422896252bcb
   m_configObjects: {}
