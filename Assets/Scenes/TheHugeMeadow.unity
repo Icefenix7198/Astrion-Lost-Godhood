@@ -9817,7 +9817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 300136798}
+  selectedFlowchart: {fileID: 1531983960}
 --- !u!4 &289511910
 Transform:
   m_ObjectHideFlags: 1
@@ -9932,7 +9932,7 @@ MonoBehaviour:
   itemId: 108
   indentLevel: 0
   description: Disable player movement
-  targetObject: {fileID: 2115526463}
+  targetObject: {fileID: 1395908642}
   targetComponentAssemblyName: NpcCollision, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -10111,7 +10111,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 300136797}
   selectedCommands:
-  - {fileID: 300136795}
+  - {fileID: 300136793}
   variables: []
   description: 
   stepPause: 0
@@ -53415,7 +53415,7 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "soldado GoldenSoldier right: \xA1Alto ah\xED! \xA1\xBFQui\xE9n eres?!
+    stringVal: "soldado GoldenSoldier right: \xA1Alto ah\xED!  \xA1\xBFQui\xE9n eres?! 
       \xA1\xBFDe d\xF3nde vienes?! El paso est\xE1 restringido.\n\nastrion astrion_mc
       hide:\r\nsoldado GoldenSoldier hide: \n"
   clearPrevious:
@@ -53484,10 +53484,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1531983959}
-  selectedCommands:
-  - {fileID: 1531983957}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
